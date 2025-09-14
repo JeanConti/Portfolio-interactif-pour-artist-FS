@@ -1,0 +1,32 @@
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+}
+
+generator client {
+  provider  = "prisma-client-js"
+}
+
+model Artist {
+  id          Int         @id @default(autoincrement())
+  name        String
+  bio         String
+  artworks    Artwork[] 
+}
+  
+model Artwork {
+  id          Int         @id @default(autoincrement())
+  titre       String
+  annee       Int
+  categorie   String
+  imageUrl    String
+  artistId    Int
+  artist      Artist      @relation(fields: [artistId], references: [id])
+}
+
+model User {
+  id          Int         @id @default(autoincrement())
+  email       String      @unique
+  password    String
+  rol         String      @default("admin")
+}
