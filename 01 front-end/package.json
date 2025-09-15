@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
     "bootstrap": "^5.3.8",
-    "sass": "^1.92.1"
+    "sass": "^1.92.1",
+    "tailwindcss": "^4.1.13"
   }
 }
