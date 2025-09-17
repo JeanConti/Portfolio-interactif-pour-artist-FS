@@ -1,0 +1,63 @@
+$font-header: 'Righteous', sans-serif;
+$backgroundColorContainer: #262d31;
+$colorHElements: #fff;
+
+
+body {
+  margin: 10px;
+  padding: 10px;
+
+  
+  /* MENU */
+
+  .header-container {
+    background: $backgroundColorContainer;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    header {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    .logo {
+      font:$font-header;
+      font-size: 30px;
+      color: $colorHElements;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+
+        a {
+          color: $colorHElements;
+          margin: 0 15px;
+          padding: 3px;
+          transition: 0.5s;
+          
+          &:hover {
+            
+          }
+        }
+      }
+    }
+    
+  }
+
+}
+
+
