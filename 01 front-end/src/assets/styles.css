@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Gotham';
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* MENU */
+.header-container {
+  background: #262d31;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav {
+      ul {
+        li {
+          a {
+            font: 'Gotham Rounded';
+            color: #fff;
+            margin: 0 15px;
+            padding: 3px;
+            transition: 0.5s;
+            text-decoration: none;
+
+            &:hover {
+              color: teal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-responsive {
+  background: #1CB698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: none;
+}
+
+/* HOME */
+section.home {
+  .picture {
+    width: 100%;
+  }
+  button {
+    font-size: 10pt;
+  }
+  .adresse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    p {
+      margin-right: 50px;
+      font-size: 15px;
+    }
+  }
+
+
+}
+
+/* TITLE */
+section.title {
+  h1 {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+}
+
+/* SERVICES */
+section .services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  
+  }
+
