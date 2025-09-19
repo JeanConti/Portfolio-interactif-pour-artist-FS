@@ -1,5 +1,8 @@
-node_modules
 # Keep environment variables out of version control
-.env
+# * se utiliza como una coincidencia comodín.
+# / se usa para ignorar las rutas relativas al archivo .gitignore.
 
+
+/node_modules
+.env
 /src/generated/prisma
