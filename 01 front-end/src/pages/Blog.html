@@ -18,18 +18,19 @@
 </head>
 <body>
    <!-- Menu -->
-    <div class="header-container">
+    <div class="header-container d-flex justify-content-end bg-black">
       <header>
         <div class="logo">
-          <a href="#">JEAN-MICHEL</a>
+          <a href="../../src/assets/icons/painter.png"></a>
         </div>
-        <nav id="nav">
-          <ul>
-            <li><a href="./Home.html" onclick="selectioner()">Home</a></li>
-            <li><a href="./About.html" onclick="selectioner()">About</a></li>
-            <li><a href="./Porfolio.html" onclick="selectioner()">Portfolio</a></li>
-            <li><a href="./Blog.html" onclick="selectioner()">Blog</a></li>
-            <li><a href="./Contact.html" onclick="selectioner()">Contact</a></li>
+        <nav id="nav" class='text-align-right'>
+          <ul class='d-flex list-unstyled m-2 p-2'>
+            <li class='me-4'><a class='text-decoration-none text-white icon-link icon-link-hover' style='--bs-link-hover-color-rgb: 25, 135, 84;' href="#./Home.html">Home</a></li>
+            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./About.html" >About</a></li>
+            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Portfolio.html" >Portfolio</a></li>
+            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Blog.html" >Blog</a></li>
+            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Contact.html" >Contact</a></li>
+            <li class='m'><a class='text-decoration-none text-white nav-link' href="" >Search</a></li>
           </ul>
         </nav>
         <div class="nav-responsive" onclick="afficherMasquerMenu()">
