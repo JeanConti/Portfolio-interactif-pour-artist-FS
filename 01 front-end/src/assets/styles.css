@@ -32,7 +32,7 @@
         li {
           a {
             font: 'Gotham Rounded';
-            color: #fff;
+            /* color: #fff; */
             margin: 0 15px;
             padding: 3px;
             transition: 0.5s;
@@ -50,7 +50,7 @@
 
 .nav-responsive {
   background: #1CB698;
-  color: #fff;
+  /* color: #fff; */
   padding: 5px 10px;
   border-radius: 7px;
   cursor: pointer;
@@ -89,16 +89,9 @@ section.title {
   }
 }
 
-/* SERVICES */
-section .services {
 
-  .services-content {
-    display: flex;
-    flex-direction: column;
-    align-items: first baseline;
-    justify-items: center;
 
-  }
-  
+/* WIDE RANGE BRAND SERVICES */
+.wideRange {
+  background-color: yellow;
 }
-
