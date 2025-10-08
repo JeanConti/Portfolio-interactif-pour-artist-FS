@@ -7,61 +7,58 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="shorcut icon" href="../../src/assets/icons/painter.png">
   <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="../assets/styles.scss">
+  
 </head>
 <body>
    <!-- Menu -->
-    <div class="header-container d-flex justify-content-center bg-black">
+    <div class="header-container d-flex flex-row align-items-end bg-black p-2">
       <header>
         <div class="logo">
           <a href="../../src/assets/icons/painter.png"></a>
         </div>
-        <nav id="nav" class='text-align-right'>
+        <nav id="nav" class='navbar fs-4'>
           <ul class='d-flex list-unstyled m-2 p-2'>
             <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Home.html">Home</a></li>
             <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./About.html" >About</a></li>
             <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Portfolio.html" >Portfolio</a></li>
-            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Blog.html" >Blog</a></li>
             <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Contact.html" >Contact</a></li>
-            <li class='m'><a class='text-decoration-none text-white nav-link' href="" >Search</a></li>
           </ul>
+          <i class="fa-solid fa-magnifying-glass"></i>
         </nav>
-        <div class="nav-responsive" onclick="afficherMasquerMenu()">
-          <i class="fa-solid fa-bars"></i>
-        </div>
       </header>
     </div>
     
     <!-- Section Home -->
-    <section class='home bg-black text-white mb-pt-5 pb-5'>
-      <div class="picture d-flex justify-content-end">
-        <img class='img-fluid text-align-right' style='width: 30rem;' src="../assets/images/laptops-593296.jpg" alt="">
+    <section class='home bg-black text-white mb-pt-5 pb-5 d-flex align-items-center'>
+      <div class="picture d-block justify-content-end p-" style='width: 80%;'>
+        <img class='img-fluid' src="../assets/images/laptops-593296.jpg" alt="reunion">
       </div>
-      <div class='container-fluid d-flex flex-column align-items-start p-5'>
-        <h1 class='fs-1 text-align-center fs-1 mb-4'>We Make <br>Creative Things Everyday</h1>
-        <p class='mb-4'>We are digital agency that helps immersive and engaging user experience that</p>
-        <button class='btn btn-warning p-2'>VIEW OUR WORK</button>
-      </div>
+      <div class='container-fluid align-items-center p-5'>
+        <h1 class='fs-1 text-align-center fs-1 mb-2' style='text-decoration: underline;'>We Make <br>Creative Things Everyday</h1>
+        <p class='fs-5'>We are digital agency that helps immersive and engaging user experience that</p>
+        <button class='btn btn-warning p-3 px-4  mx-5 me-2 mt-4 align-items' href='./Portfolio.html'>VIEW OUR WORK</button>
+      <div class='d-flex mt-5 fs-4'>
+        <p class='me-1'>27 Division St, NY <br> 10002, USA</p>
+        <p class=''>+1 800 123 654<br> 987first.agency@mail</p>
 
-      <div class="adresse">
-        <p>27 Division St, NY <br> 10002, USA</p>
-        <p>+1 800 123 654<br> 987first.agency@mail</p>
       </div>
     </section>
 
     <!-- Section We Give Unparalleled Flexibility -->
     <section class='title bg-primary'>
-      <div class='container-fluid d-flex text-white'>
-        <h1 style= color:yellow;>*</h1>
+      <div class='container-fluid d-flex text-white justify-content-center'>
+        <h1 style='color:yellow;'>*</h1>
         <h1 class='text-white'> We Give Unparalleled Flexibility</h1>
       </div>
     </section>
 
+    <!-- Section Services with cards -->
     <section class='services bg-white'>
       <div class='container text-center my-5'>
         <h2 class='mb-5 text-center'>WHAT WE CAN DO FOR<br> OUR CLIENTS</h2>
 
-        <div class='row g-5'> <!-- Me donne le num de colonnes -->
-
+        <div class='row g-5 '> <!-- Me donne le num de colonnes -->
           <div class='col-md-6'> <!-- Espace de chaque colonne -->
             <div class='card p-3 shadow-sm'>  <!-- Format card -->
               <div class="card-body">
@@ -101,22 +98,30 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <section class='wideRange'>
-      <div class=''>
+    <!-- Section WIDE RANGE SERVICES -->
 
-        <img src="" alt="">
+    <section class='wideRange d-flex text-align-center'>
+      <img src="../assets/images/coffee.jpg" style='width: 50%; height: 20%;' alt="">
+      <div class='list '>
+
         <h2>WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
         <p>We are a creative agency working with brands buildings insightful strategy, creating unique design and crafting value</p>
-  
-        <div class="brandDesign">
-          <p class='text-decoration-underline'>Branding</p>
+        <div class='sub-list '>
+          <p style='margin-bottom: 5px;'>Branding 48%</p>
+          <div class="progress ms-5" style='height: 5px; width: 38%;'>
+            <div class="progress-bar text-black" style='width: 48%;' aria-valuenow="48" aria-valuemin="0" aria-valuemax="48"></div>
+          </div>
+          <p style='margin-bottom: 5px;
+          margin-top: 10px;'>Development 44%</p>
+          <div class="progress ms-5" style='height: 5px; width: 30%;'>
+            <div class="progress-bar text-black" style='width: 44%;' aria-valuenow="45" aria-valuemin="0" aria-valuemax=""></div>
+          </div>
         </div>
-
+        
       </div>
 
     </section>

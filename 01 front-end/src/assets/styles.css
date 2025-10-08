@@ -5,11 +5,14 @@
   padding: 0;
 }
 
+/* --SECTION HOME-- */
+
 /* MENU */
 .header-container {
   background: #262d31;
-  position: fixed;
+  /* position:fixed; */
   width: 100%;
+  
 }
 
 .header-container header {
@@ -24,22 +27,24 @@
   text-decoration: none;
 }
 
+.header-container header nav {
+  position:relative;  
+}
 
 .header-container header nav ul li a{
   text-align: none;
   color: #fff;
-  margin: 15px;
-  /* padding: 3px; */
+  /* margin: 10px; */
   transition: 0.5s;
   text-decoration: none;
 }
 
 .header-container header nav ul li a:hover {
-  color: #1CB698;
+  color: teal;
 }
 
 .nav-responsive {
-  background: #1CB698;
+  background: teal;
   color: #fff;
   padding: 5px 10px;
   border-radius: 7px;
@@ -49,42 +54,42 @@
 
 
 
-
-/* HOME */
-section.home.picture {
-    width: 100%;
-  
-  
-    button {
-    font-size: 10pt;
-  }
-  .adresse {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    p {
-      font: 'Gotham';
-      margin-left: 80px;
-      margin-right: 80px;
-      font-size: 15px;
-    }
-  }
-
-
+.home .picture {
+  background-color: hsl(202, 13%, 17%);
 }
 
-/* TITLE */
-section.title {
-  h1 {
-    font-size: 2.7rem;
-    text-align: center;
-  }
+.home img {
+  width: 110%;
+  opacity: .4;
 }
 
 
 
-/* WIDE RANGE BRAND SERVICES */
+/* --SECTION WIDE RANGE SERVICES-- */
 .wideRange {
   background-color: yellow;
+}
+
+.wideRange .list {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center; 
+}
+
+.wideRange .list h2,p {
+  margin-left: 50px;
+}
+
+.wideRange .list h2 {
+  margin-bottom: 40px;
+}
+
+.wideRange .list p {
+  margin-bottom: 40px;
+}
+
+.wideRange .list .progress .progress-bar {
+  background-color: black;
 }

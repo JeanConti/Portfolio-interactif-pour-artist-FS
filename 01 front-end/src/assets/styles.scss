@@ -1,0 +1,18 @@
+// Variables
+$header-height: 70px;
+
+// Navbar
+.header-container {
+  background: #262d31;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: $header-height; // hauteur fixée avec la variable
+}
+
+// Décalage du contenu
+body {
+  padding-top: $header-height;
+}
