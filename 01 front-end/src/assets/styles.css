@@ -5,8 +5,9 @@
   padding: 0;
 }
 
-/* --SECTION HOME-- */
+/* --PAGE: HOME-- */
 
+/* --SECTION HOME-- */
 /* MENU */
 .header-container {
   background: #262d31;
@@ -27,21 +28,18 @@
   text-decoration: none;
 }
 
-.header-container header nav {
-  position:relative;  
-}
+/* .header-container header nav {
+  position:fixed;  
+} */
 
-.header-container header nav ul li a{
+/* .header-container header nav ul li a{
   text-align: none;
   color: #fff;
-  /* margin: 10px; */
   transition: 0.5s;
   text-decoration: none;
-}
+} */
 
-.header-container header nav ul li a:hover {
-  color: teal;
-}
+
 
 .nav-responsive {
   background: teal;
@@ -52,8 +50,6 @@
   display: none;
 }
 
-
-
 .home .picture {
   background-color: hsl(202, 13%, 17%);
 }
@@ -62,8 +58,6 @@
   width: 110%;
   opacity: .4;
 }
-
-
 
 /* --SECTION WIDE RANGE SERVICES-- */
 .wideRange {
@@ -75,7 +69,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center; 
+  justify-content: center;
+  margin-left: 20px; 
 }
 
 .wideRange .list h2,p {
@@ -88,8 +83,42 @@
 
 .wideRange .list p {
   margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.wideRange .list .progress {
+  background-color: transparent;
 }
 
 .wideRange .list .progress .progress-bar {
+  
   background-color: black;
+}
+
+/* Section Discover our selected projects */
+.selected-projects .carousel {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  overflow: hiden;
+  border-radius: 15px;
+}
+
+/* Masquer les input radio */
+.selected-projects .carousel input {
+  display: none;
+}
+
+.selected-projects .carousel .slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.selected-projects .carousel .slides .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
