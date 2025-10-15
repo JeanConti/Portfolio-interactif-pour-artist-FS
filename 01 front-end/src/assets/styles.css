@@ -148,5 +148,27 @@
 }
 
 /* Video */
+.video .container-fluid{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+hr {
+  margin-left: 35%;
+}
+
+/* Section Read Ours Arcticles */
+.read-articles .container-fluid .carts .card {
+  width: 21%;
+}
+
+/* Grille */
+.read-articles .container .col-3 img {
+  max-width: 90%;
+  max-height: 80px;
+  object-fit: contain;
+}
 
 
