@@ -191,5 +191,17 @@ hr {
 }
 
 .last address p {
-  font: './fonts/Gotham Rounded/GothamRnd-Light.otf';
+  font: 'Gotham Rounded Light';
+}
+
+.last .list {
+  margin-left: 1058px;
+  margin-top: -404px;
+}
+.last .list ul {
+  list-style: none;
+}
+
+.last .list ul li  {
+  margin-bottom: 20px;
 }
