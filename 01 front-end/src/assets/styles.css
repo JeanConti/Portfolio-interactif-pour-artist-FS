@@ -5,6 +5,15 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: Gotham Rounded;
+  src: url(./fonts/Gotham\ Rounded/);
+}
+
+h1,h2,h3,h4,h5{
+  font: './fonts/Gotham Rounded/GothamRnd-Medium.otf';
+}
+
 /* --PAGE: HOME-- */
 
 /* --SECTION HOME-- */
@@ -143,9 +152,6 @@
   border-bottom: 1px solid black;
 }
 
-.selected-projects table tr td .date {
-  /* font-size: x-small; */
-}
 
 /* Video */
 .video .container-fluid{
@@ -166,9 +172,24 @@ hr {
 
 /* Grille */
 .read-articles .container .col-3 img {
-  max-width: 90%;
-  max-height: 80px;
+  max-width: 100%;
+  max-height: 90px;
   object-fit: contain;
 }
 
 
+/* Section Something Great  */
+.something-great button {
+  background-color: black;
+  color:#fff
+}
+
+/* Section last */
+.last input[type='email']{
+  width: 362px;
+  border: none;
+}
+
+.last address p {
+  font: './fonts/Gotham Rounded/GothamRnd-Light.otf';
+}
