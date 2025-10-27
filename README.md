@@ -10,3 +10,6 @@ Projet Portfolio Interactif pour Artits
 
   Server => Express
   DataBase => Prisma + MySQL
+
+  Problèmes a gérer:
+    - Page home responsive

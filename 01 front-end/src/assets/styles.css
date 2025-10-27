@@ -205,3 +205,15 @@ hr {
 .last .list ul li  {
   margin-bottom: 20px;
 }
+
+/* Footer */
+footer p {
+  margin-right: 1000px;
+}
+
+footer a {
+  margin-right: 20px;
+}
+
+/* Responsive */
+

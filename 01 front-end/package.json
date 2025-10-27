@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
     "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
     "sass": "^1.92.1"
   }
 }
