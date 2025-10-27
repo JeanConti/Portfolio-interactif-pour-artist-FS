@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>About</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="shorcut icon" href="../../src/assets/icons/painter.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
@@ -18,22 +18,19 @@
   <div class="header-container d-flex justify-content-end bg-black">
     <header>
       <div class="logo">
-        <a href="../../src/assets/icons/painter.png"></a>
+        <i href="../../src/assets/icons/painter.png"></i>
       </div>
       <nav id="nav" class='text-align-right'>
-        <ul class='d-flex list-unstyled m-2 p-2'>
+        <ul class='d-flex align-items-center list-unstyled m-2 p-2'>
           <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Home.html">Home</a></li>
           <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./About.html">About</a></li>
           <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Portfolio.html">Portfolio</a>
           </li>
           <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Blog.html">Blog</a></li>
           <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Contact.html">Contact</a></li>
-          <li class='m'><a class='text-decoration-none text-white nav-link' href=""></a><svg
-              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-              viewBox="0 0 16 16">
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-            </svg></li>
+          <li class='me-4'>
+            <button href='./Contact.html' type="button" class="btn btn-light P-3">WORKS WITH US</button>
+          </li>
         </ul>
       </nav>
       <div class="nav-responsive" onclick="afficherMasquerMenu()">
@@ -41,6 +38,94 @@
       </div>
     </header>
   </div>
+
+  <section class="about-title d-inline justify-content-center align-items-center mt-5 mb-5">
+    <div class='title-img position-relative mb-5'>
+      <img class='w-100 h-75 img-fluid text-center mx-auto d-bloc'
+        src="../assets/images/about/pexels-helenalopes-1015568-mediun.jpg" alt="">
+      <h1 class='text-black position-absolute top-50 start-50 fs-1 fw-bold text-center p-3 rounded'>
+        About</h3>
+    </div>
+  </section>
+
+  <!-- Section Title -->
+  <section class='about-title-info d-flex justify-content-around mt-5 mb-5'>
+    <div class='info'>
+      <h3 class='ms-5 fs-1'>26+</h3>
+      <h5 class='ms-5 fs-3'>Years of Experience</h5>
+      <p>We are a creative agency brands <br> bulding insightful strategy. creating unique designs
+        helping</p>
+    </div>
+
+    <div class='info'>
+      <h3 class='ms-5 fs-1'>26+</h3>
+      <h5 class='ms-5 fs-3'>Years of Experience</h5>
+      <p>We are a creative agency brands <br> bulding insightful strategy. creating unique designs helping</p>
+    </div>
+
+    <div class='info'>
+      <h3 class='ms-5 fs-1'>26+</h3>
+      <h5 class='ms-5 fs-3'>Years of Experience</h5>
+      <p>We are a creative agency brands <br> bulding insightful strategy. creating unique designs helping</p>
+    </div>
+  </section>
+
+  <!-- Section Passionate -->
+  <section class='about-passionate d-flex d-flex text-align-center align-items-center mt-5'>
+    <div class="info w-100 ms-5">
+      <h1 class="ms-5 fs-1 my-5">PASSIONATE<br>ABOUT CREATING <br>QUALITY DESIGN</h1>
+
+      <h3 class='ms-5 mt-5 fs-3'>WE LOVE WHAT WE DO</h3>
+      <p class='normal'>We are a creative agency working with brands bulding <br> insightful strategy. creating unique
+        designs and
+        crafting <br> value</p>
+
+      <h3 class='ms-5 mt-5 fs-3'>WHAT WORK WITH US</h3>
+      <p class='normal'>We are a creative agency working with brands bulding <br> insightful strategy. creating unique
+        designs and
+        crafting <br> value</p>
+    </div>
+    <img style='width: 50%; height: auto;' src="../assets/images/about/devs-talking.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- Section Our Team -->
+  <section class='about-team mt-5'>
+    <!-- Table -->
+
+    <table class="table table-striped mb-5" style='width: 80%;'>
+      <tbody class='align-items-center'>
+        <tr>
+          <td class='date'>2017</td>
+          <td class='w-75'>
+            <p class='fs-3'>New York Design Week</p>
+            <p>We bring to life the most complex projects, specialize</p>
+          </td>
+          <td class='w-100'>MAIN DEVELOPER</td>
+        </tr>
+
+        <tr>
+          <td>2019</td>
+          <td>
+            <p class='fs-3'>The Blue Design Awards</p>
+            <p>We bring to life the most complex projects, specialize</p>
+          </td>
+          <td>ANIMATOR</td>
+        </tr>
+        <tr>
+          <td class='date'>2017</td>
+          <td>
+            <p class='fs-3'>New York Design Week</p>
+            <p>We bring to life the most complex projects, specialize</p>
+          </td>
+          <td>MAIN DEVELOPER</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+  </section>
 
 </body>
 
