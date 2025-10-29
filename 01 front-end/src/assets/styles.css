@@ -275,3 +275,38 @@ margin-right: 20%;
   background-color: yellow;
 }
 
+
+
+.about-project-mind .namemail input {
+  width: 46%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.about-project-mind .namemail input::focus {
+  border: transparent;
+}
+
+.about-project-mind input::placeholder {
+  color: black;
+  opacity: 0.8;
+}
+
+.about-project-mind input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.about-project-mind textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 100px;
+}
+
+.about-project-mind textarea::placeholder {
+  color: black;
+  opacity: 0.8;
+}
