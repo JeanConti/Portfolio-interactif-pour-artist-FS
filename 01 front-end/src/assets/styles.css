@@ -228,9 +228,13 @@ footer a {
 
 }
 
+.about-title .title-img {
+  background-color: black;
+}
+
 .about-title .title-img img{
   display: block;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 about-title-info .info p{
@@ -252,5 +256,22 @@ about-title-info .info p{
 
 .about-team table tbody td {
 margin-right: 20%;
+}
+
+
+.about-team table tbody tr {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+
+.about-team-pictures  .container-fluid img {
+  filter: grayscale(100%) brightness(100%);
+  transition: 0.3s;
+}
+
+/* Section Project on your mind */
+.about-project-mind {
+  background-color: yellow;
 }
 
