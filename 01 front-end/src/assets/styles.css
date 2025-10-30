@@ -276,7 +276,6 @@ margin-right: 20%;
 }
 
 
-
 .about-project-mind .namemail input {
   width: 46%;
   background: transparent;
@@ -320,4 +319,9 @@ margin-right: 20%;
   max-width: 100%;
   max-height: 90px;
   object-fit: contain;
+}
+
+/* Section About Flexibility  */
+.about-flexibility .container-fluid {
+  margin-top: 50px;
 }
