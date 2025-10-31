@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/styles.css">
 </head>
+
 <body>
-<!DOCTYPE html>
-<lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-</head>
-<body>
-   <!-- Menu -->
-    <div class="header-container d-flex justify-content-end bg-black">
-      <header>
-        <div class="logo">
-          <a href="../../src/assets/icons/painter.png"></a>
-        </div>
-        <nav id="nav" class='text-align-right'>
-          <ul class='d-flex list-unstyled m-2 p-2'>
-            <li class='me-4'><a class='text-decoration-none text-white icon-link icon-link-hover' style='--bs-link-hover-color-rgb: 25, 135, 84;' href="#./Home.html">Home</a></li>
-            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./About.html" >About</a></li>
-            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Portfolio.html" >Portfolio</a></li>
-            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Blog.html" >Blog</a></li>
-            <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Contact.html" >Contact</a></li>
-            <li class='m'><a class='text-decoration-none text-white nav-link' href="" >Search</a></li>
-          </ul>
-        </nav>
-        <div class="nav-responsive" onclick="afficherMasquerMenu()">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </header>
-    </div>
+  <!DOCTYPE html>
+  <lang="en">
 
-    <!-- SECTION CONTACT -->
-    <section id="contact" class="contact">
-      <div class="section-content">
-        <h2>CONTACT</h2>
-        <div class="rangee">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact</title>
+    </head>
 
-          <!-- Formulaire -->
-           <div class="container">
-             <div class="row ">
-              <div class="col">
-                <input class='form-control' type="text" placeholder="Nom, Prénom">
-                <input class='form-control' type="text" placeholder="Téléphone">
-                <input class='form-control' type="text" placeholder="Email">
-                <input class='form-control' type="text" placeholder="Sujet">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <button>
-                  Envoyer <i class="fa-solid fa-paper-plane"></i>
-                  <!-- <span class="overlay"></span> -->
-                </button>
-
-              </div>
-             </div>
-
-           </div>
-  
-
-        </div>
+    <body>
+      <!-- Menu -->
+      <div class="header-container d-flex justify-content-end bg-black">
+        <header>
+          <div class="logo">
+            <a href="../../src/assets/icons/painter.png"></a>
+          </div>
+          <nav id="nav" class='text-align-right'>
+            <ul class='d-flex list-unstyled m-2 p-2'>
+              <li class='me-4'><a class='text-decoration-none text-white icon-link icon-link-hover'
+                  style='--bs-link-hover-color-rgb: 25, 135, 84;' href="#./Home.html">Home</a></li>
+              <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./About.html">About</a></li>
+              <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Portfolio.html">Portfolio</a>
+              </li>
+              <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Blog.html">Blog</a></li>
+              <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Contact.html">Contact</a>
+              </li>
+              <li class='m'><a class='text-decoration-none text-white nav-link' href="">Search</a></li>
+            </ul>
+          </nav>
+          <div class="nav-responsive" onclick="afficherMasquerMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </header>
       </div>
-    </section>
-</body>
+
+      <!-- Section Title -->
+      <section class="about-title d-inline justify-content-center align-items-center mt-5 mb-5 bg-black">
+        <div class='title-img position-relative mb-5'>
+          <img class='w-75 h-75 img-fluid text-center rounded mx-auto d-bloc'
+            src="../assets/images/contact/handshake.jpg" alt="">
+          <h1
+            class='text-white position-absolute top-50 start-50 end-75 translate-middle bg-black bg-opacity-50 fs-1 fw-bold text-center p-3 rounded'>
+            Contact</h3>
+        </div>
+      </section>
+
+      <section class='services bg-white mt-5'>
+        <div class='container text-center my-5'>
+          <div class='row g-5 '> <!-- Me donne le num de colonnes -->
+            <div class='col-md-6'> <!-- Espace de chaque colonne -->
+              <div class='card  shadow-sm'> <!-- Format card -->
+                <div class="card-body">
+                  <h2 class='card-title text-start ms-5'>HEADQUARTERS</h2>
+                  <address class='mt-3 fs-6 text-start ms-5 mt-5'>
+                    <p class='ms-1 text-start mb-5 fs-5'>27 Division St, New York, <br>NY 10002, USA</p>
+                    <a class='text-start fs-5 text' style='text-decoration: none; color: black;' href="">GET DIRECTION
+                    </a>
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='row g-5 '> <!-- Me donne le num de colonnes -->
+            <div class='col-md-6'> <!-- Espace de chaque colonne -->
+              <div class='card  shadow-sm'> <!-- Format card -->
+                <div class="card-body">
+                  <h2 class='card-title text-start ms-5'>HEADQUARTERS</h2>
+                  <address class='mt-3 fs-6 text-start ms-5 mt-5'>
+                    <p class='ms-1 text-start mb-5 fs-5'>27 Division St, New York, <br>NY 10002, USA</p>
+                    <a class='text-start fs-5 text' style='text-decoration: none; color: black;' href="">GET DIRECTION
+                    </a>
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+      </section>
+
+    </body>
+    <script src='	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'></script>
+
 </html>
