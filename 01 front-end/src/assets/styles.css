@@ -70,6 +70,11 @@ h1,h2,h3,h4,h5{
   opacity: .4;
 }
 
+.services .container .card {
+  margin: 0;
+  padding: 0;
+}
+
 /* --SECTION WIDE RANGE SERVICES-- */
 .wideRange {
   background-color: yellow;
@@ -322,4 +327,12 @@ margin-right: 20%;
 /* Section About Flexibility  */
 .about-flexibility .container-fluid {
   margin-top: 50px;
+}
+
+/* CONTACT PAGE */
+
+/* Section Contact cards */
+.contact-cards .container .card p {
+  margin: 0; /* Enlève la marge par défaut */
+  padding: 0; /* Optionnel : enlève le padding aussi */
 }
