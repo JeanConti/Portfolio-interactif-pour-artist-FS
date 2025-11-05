@@ -39,16 +39,6 @@ h1,h2,h3,h4,h5{
   text-decoration: none;
 }
 
-/* .header-container header nav {
-  position:fixed;  
-} */
-
-/* .header-container header nav ul li a{
-  text-align: none;
-  color: #fff;
-  transition: 0.5s;
-  text-decoration: none;
-} */
 
 
 
@@ -335,4 +325,8 @@ margin-right: 20%;
 .contact-cards .container .card p {
   margin: 0; /* Enlève la marge par défaut */
   padding: 0; /* Optionnel : enlève le padding aussi */
+}
+
+.contact-cards .container .last-card {
+  margin-left: 341px;
 }

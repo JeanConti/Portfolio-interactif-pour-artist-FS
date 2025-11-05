@@ -15,12 +15,12 @@
 
 <body>
   <!-- Menu -->
-  <div class="header-container d-flex justify-content-end bg-black">
+  <!-- <div class="header-container d-flex justify-content-end bg-black">
     <header>
       <div class="logo">
         <a href="../../src/assets/icons/painter.png"></a>
       </div>
-      <nav id="nav nav0" class='text-align-right'>
+      <nav id="nav" class='text-align-right'>
         <ul class='d-flex list-unstyled m-2 p-2'>
           <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Home.html">Home</a></li>
           <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./About.html">About</a></li>
@@ -36,9 +36,33 @@
       </div>
     </header>
   </div>
+ -->
+
+  <!-- HEADER -->
+  <header class="header bg-dark text-white bg-black fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"></a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav text-white fs-6">
+            <li class="nav-item"><a class="nav-link text-white" href="./Home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./Portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <!-- Section Home -->
-  <section class='home bg-black text-white mb-pt-5 pb-5 d-flex align-items-center'>
+  <section class='home bg-black text-white mt-5 mb-pt-5 pb-5 d-flex align-items-center'>
     <div class="picture d-block justify-content-end p-" style='width: 80%;'>
       <img class='img-fluid rounded' src="../assets/images/laptops-593296.jpg" alt="reunion">
     </div>
@@ -55,7 +79,7 @@
   </section>
 
   <!-- Section We Give Unparalleled Flexibility -->
-  <section class='title bg-primary w-100'>
+  <section class='title bg-primary w-100 col-md-6'>
     <div class='container-fluid d-flex text-white justify-content-center p-3'>
       <marquee behavior="scroll" direction="right">
         <h1 class='text-white'>We Give Unparalleled Flexibility <span style='color: yellow;'>*</span> We Give
@@ -70,8 +94,8 @@
     <div class='container text-center my-5'>
       <h2 class='mb-5 text-center'>WHAT WE CAN DO FOR<br> OUR CLIENTS</h2>
 
-      <div class='row g-5 '> <!-- Me donne le num de colonnes -->
-        <div class='col-md-6'> <!-- Espace de chaque colonne -->
+      <div class='row g-4'> <!-- Me donne le num de colonnes -->
+        <div class='col-12 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
           <div class='card p-3 shadow-sm'> <!-- Format card -->
             <div class="card-body">
               <h5 class='card-title'>Branding Design</h5>
@@ -81,7 +105,7 @@
           </div>
         </div>
 
-        <div class='col-md-6'> <!-- Espace de chaque colonne -->
+        <div class='col-6 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
           <div class='card p-3 shadow-sm'> <!-- Format card -->
             <div class="card-body">
               <h5 class='card-title'>Website Development</h5>
@@ -91,7 +115,7 @@
           </div>
         </div>
 
-        <div class='col-md-6'> <!-- Espace de chaque colonne -->
+        <div class='col-6 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
           <div class='card p-3 shadow-sm'> <!-- Format card -->
             <div class="card-body">
               <h5 class='card-title'>Illustration Modelling</h5>
@@ -101,7 +125,7 @@
           </div>
         </div>
 
-        <div class='col-md-6'> <!-- Espace de chaque colonne -->
+        <div class='col-6 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
           <div class='card p-3 shadow-sm'> <!-- Format card -->
             <div class="card-body">
               <h5 class='card-title'>Digital Marketing</h5>
@@ -159,7 +183,7 @@
       <h2 class='mt-5 mb-5 text-center'>WHAT WE CAN DO FOR<br> OUR CLIENTS</h2>
 
       <!-- Carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="carousel slide col-md-6">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
