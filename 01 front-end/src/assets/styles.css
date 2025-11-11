@@ -330,3 +330,15 @@ margin-right: 20%;
 .contact-cards .container .last-card {
   margin-left: 341px;
 }
+
+/* --PAGE PORTFOLIO-- */
+
+.portfolio {
+  margin-top: 100px;
+}
+
+.portfolio .container-fluid .row {
+  margin-top: 100px;
+  margin-left: 263px;
+  margin-right: -460px;
+}

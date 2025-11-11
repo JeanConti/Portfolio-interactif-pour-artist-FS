@@ -15,29 +15,35 @@
 
 <body>
   <!-- Menu -->
-  <div class="header-container d-flex justify-content-end bg-black">
-    <header>
-      <div class="logo">
-        <i href="../../src/assets/icons/painter.png"></i>
+
+  <header class="header bg-dark text-white bg-black fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"></a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav text-white fs-6">
+            <li class="nav-item"><a class="nav-link text-white" href="./Home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./Portfolio.html">Portfolio</a></li>
+            <li class="nav-item me-3"><a class="nav-link text-white" href="./Contact.html">Contact</a></li>
+            <li class='me-4'>
+              <button href='./Contact.html' type="button" class="btn btn-light P-3">WORKS WITH US</button>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-responsive" onclick="afficherMasquerMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-      <nav id="nav" class='text-align-right'>
-        <ul class='d-flex align-items-center list-unstyled m-2 p-2'>
-          <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Home.html">Home</a></li>
-          <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./About.html">About</a></li>
-          <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Portfolio.html">Portfolio</a>
-          </li>
-          <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Blog.html">Blog</a></li>
-          <li class='me-4'><a class='text-decoration-none text-white nav-link' href="./Contact.html">Contact</a></li>
-          <li class='me-4'>
-            <button href='./Contact.html' type="button" class="btn btn-light P-3">WORKS WITH US</button>
-          </li>
-        </ul>
-      </nav>
-      <div class="nav-responsive" onclick="afficherMasquerMenu()">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </header>
-  </div>
+    </nav>
+  </header>
+
 
   <!-- Section Title -->
   <section class="about-title d-inline justify-content-center align-items-center mt-5 mb-5 bg-black">
@@ -92,8 +98,8 @@
 
   <!-- Section Our Team -->
   <section class='about-team mt-5 pt-5'>
-    <!-- Table -->
 
+    <!-- Table -->
     <table class="table table-striped mb-5 mt-3" style='width: 80%;'>
       <tbody class='align-items-center'>
         <tr>
@@ -102,7 +108,7 @@
             <p class='fs-3'>New York Design Week</p>
             <p>We bring to life the most complex projects, specialize</p>
           </td>
-          <td class='w-100 text-right'>MAIN DEVELOPER</td>
+          <td class='w-100 text-end'>MAIN DEVELOPER</td>
         </tr>
 
         <tr>
@@ -111,7 +117,7 @@
             <p class='fs-3 mb-2'>The Blue Design Awards</p>
             <p>We bring to life the most complex projects, specialize</p>
           </td>
-          <td class='text-right'>ANIMATOR</td>
+          <td class='text-end'>ANIMATOR</td>
         </tr>
         <tr>
           <td class='date'>2017</td>
@@ -119,7 +125,7 @@
             <p class='fs-3'>The Best Flow</p>
             <p>We bring to life the most complex projects, specialize</p>
           </td>
-          <td class='text-right'>MAIN DEVELOPER</td>
+          <td class='text-end'>MAIN DEVELOPER</td>
         </tr>
       </tbody>
     </table>
@@ -243,7 +249,7 @@
     </div>
   </section>
 
-
+  <!-- Footer -->
   <footer class='class="footer d-flex align-items-start mt-5 p-2 border border-top border-dark'>
     <p class='text-black'>Copyright © xxxx</p>
 
