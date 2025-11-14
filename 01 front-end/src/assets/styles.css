@@ -332,7 +332,6 @@ margin-right: 20%;
 }
 
 /* --PAGE PORTFOLIO-- */
-
 .portfolio {
   margin-top: 100px;
 }
@@ -341,4 +340,33 @@ margin-right: 20%;
   margin-top: 100px;
   margin-left: 263px;
   margin-right: -460px;
+}
+
+/* --PAGE PROJECT WEBSITE-- */
+/* Nav */
+.mininav {
+  margin-top: 81px;
+  margin-bottom: 15px;
+  display: grid;
+  justify-content: center;
+}
+
+/* Section Project */
+.project .about-project {
+  margin-top: 100px;
+  margin-left: 193px;
+  margin-right: 100px;
+}
+
+.project .about-project p {
+  font: 'GothamRdn-light.otf';
+}
+
+.project .about-project ol li {
+  list-style: circle;
+}
+
+.website-prevnex {
+  margin-top: 170px;
+  margin-left: 150px;
 }
