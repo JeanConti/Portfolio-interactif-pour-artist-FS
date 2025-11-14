@@ -193,8 +193,8 @@ hr {
 }
 
 .last .list {
-  margin-left: 1058px;
-  margin-top: -404px;
+  margin-left: 992px;
+  margin-top: -388px;
 }
 .last .list ul {
   list-style: none;
@@ -353,7 +353,7 @@ margin-right: 20%;
 
 /* Section Project */
 .project .about-project {
-  margin-top: 100px;
+  margin-top: 10px;
   margin-left: 193px;
   margin-right: 100px;
 }
@@ -367,6 +367,42 @@ margin-right: 20%;
 }
 
 .website-prevnex {
-  margin-top: 170px;
-  margin-left: 150px;
+  margin-top: 497px;
+  margin-bottom: 150px;
+}
+
+.info-project {
+  max-width: 250px;
+  margin-left: 1133px;
+  margin-top: -695px;
+  /* margin-top: -778px; */
+  display: flex;
+  flex-direction: column;
+  gap: .9rem; /* espace entre chaque bloc */
+  font-family: "GothamRdn", sans-serif;
+  color: #111;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.label {
+  font-weight:bold;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 0.2rem;
+}
+
+.value {
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #000;
+}
+
+project-flexibility {
+  margin-top: 100px;
 }
