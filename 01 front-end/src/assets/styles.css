@@ -213,7 +213,6 @@ footer a {
   margin-right: 20px;
 }
 
-/* Responsive */
 
 
 /* --PAGE: ABOUT-- */
@@ -375,7 +374,6 @@ margin-right: 20%;
   max-width: 250px;
   margin-left: 1133px;
   margin-top: -695px;
-  /* margin-top: -778px; */
   display: flex;
   flex-direction: column;
   gap: .9rem; /* espace entre chaque bloc */
@@ -405,4 +403,17 @@ margin-right: 20%;
 
 project-flexibility {
   margin-top: 100px;
+}
+
+/* --Responsive-- */
+
+.responsive {
+  display: grid;
+  grid-template-columns: repeat(
+    autofit, 
+    minmax(
+      150px,
+      1fr
+    )
+  );
 }
