@@ -39,9 +39,6 @@ h1,h2,h3,h4,h5{
   text-decoration: none;
 }
 
-
-
-
 .nav-responsive {
   background: teal;
   color: #fff;
@@ -223,7 +220,11 @@ footer a {
 }
 
 .about-title .title-img {
-  background-color: black;
+  background: linear-gradient(to top, rgba(30,35,38,0.8), rgba(30,35,38,1)), url(../assets/images/about/pexels-helenalopes-1015568-mediun.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .about-title .title-img img{
@@ -320,6 +321,19 @@ margin-right: 20%;
 
 /* CONTACT PAGE */
 
+.contact-title .title-img{
+  background: linear-gradient(to top, rgba(30,35,38,0.8), rgba(30,35,38,1)), url(../assets/images/contact/handshake.jpg);
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-title .title-img img{
+  display: block;
+  opacity: 0.3;
+}
+
 /* Section Contact cards */
 .contact-cards .container .card p {
   margin: 0; /* Enlève la marge par défaut */
@@ -331,8 +345,21 @@ margin-right: 20%;
 }
 
 /* --PAGE PORTFOLIO-- */
+.portfolio-title .title-img {
+  background: linear-gradient(to top, rgba(30,35,38,0.8), rgba(30,35,38,1)), url(../assets/images/portfolio/pexels-kawerodriguess-16313660.jpg);
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  align-items: start;
+}
+
+.portfolio-title .title-img img{
+  display: block;
+  opacity: 0.6;
+}
+
 .portfolio {
-  margin-top: 100px;
+  margin-top: -50px;
 }
 
 .portfolio .container-fluid .row {
