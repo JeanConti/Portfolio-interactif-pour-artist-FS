@@ -4,6 +4,7 @@
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License Badge">
   <img src="https://img.shields.io/badge/status-en%20développement-blue" alt="Status Badge">
   <img src="https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20Bootstrap%20%7C%20EJS%20%7C%20NestJS-orange" alt="Stack Badge">
+  <img src="https://img.shields.io/badge/node.js-339933?logo=node.js&logoColor=white" alt="Node.js Badge">
   <img src="https://img.shields.io/badge/version-1.0.0-purple" alt="Version Badge">
 </p>
 
@@ -27,3 +28,166 @@ Le projet est construit en trois blocs :
 </ul>
 
 <p>L’ensemble forme un système complet : <strong>élégant côté front, puissant côté back</strong>.</p>
+
+<hr>
+
+<h2>🎯 1 — Création des pages HTML avec CSS & Bootstrap</h2>
+
+<p>
+Cette première étape consiste à concevoir l’interface visuelle et l’ergonomie du portfolio.
+Elle comprend :
+</p>
+
+<ul>
+  <li>Création des pages principales : Home, About, Portfolio, Contact</li>
+  <li>Utilisation du framework <strong>Bootstrap 5</strong> pour assurer la responsivité</li>
+  <li>Mise en place de : navbar responsive, carrousels, cartes de services, grilles, etc.</li>
+  <li>Animations et transitions fluides pour améliorer l’expérience utilisateur</li>
+</ul>
+
+<p>
+Objectif : créer une base solide, moderne et adaptable sur tous les écrans.
+</p>
+
+<hr>
+
+<h2>⚙️ 2 — Dynamisation du front avec EJS</h2>
+
+<p>
+Pour rendre les pages plus modulaires et éviter la duplication, la structure du site a été reconstruite avec
+<strong>EJS</strong>.
+</p>
+
+<p>Grâce à EJS :</p>
+
+<ul>
+  <li>Création de partials (header, footer, navigation)</li>
+  <li>Injection dynamique du contenu dans les vues</li>
+  <li>Structure plus simple, propre et maintenable</li>
+  <li>Centralisation de la logique d’affichage</li>
+</ul>
+
+<p>
+Résultat : un site dynamique qui combine structure HTML et rendu basé sur les données.
+</p>
+
+<hr>
+
+<h2>🛡 3 — Développement de l’administration avec NestJS</h2>
+
+<p>
+La troisième partie du projet consiste à développer un <strong>back-office sécurisé</strong> avec <strong>NestJS</strong>.
+</p>
+
+<p>Fonctionnalités clés :</p>
+
+<ul>
+  <li>API REST complète (modules, controllers, services)</li>
+  <li>CRUD pour gérer les projets, images, services et utilisateurs</li>
+  <li>Système d’authentification et de sécurisation des routes</li>
+  <li>Connexion à la base de données via Prisma ou TypeORM</li>
+  <li>Administration simple pour modifier le contenu du site</li>
+</ul>
+
+<p>
+NestJS offre une architecture professionnelle, modulaire et évolutive.
+</p>
+
+<hr>
+
+<h2>📱 Responsive Design</h2>
+
+<p>
+Le site est entièrement optimisé pour tous types d’appareils :
+</p>
+
+<ul>
+  <li>📱 Smartphones</li>
+  <li>📲 Tablettes</li>
+  <li>💻 Laptops</li>
+  <li>🖥 Écrans larges</li>
+</ul>
+
+<p>
+Grâce à Bootstrap, aux media queries et à une grille flexible, l’interface reste fluide,
+légère et intuitive.
+</p>
+
+<hr>
+
+<h2>🚀 Résultat Final</h2>
+
+<p>Le site final offre :</p>
+
+<ul>
+  <li>✨ Une interface moderne et immersive</li>
+  <li>✨ Une navigation fluide et responsive</li>
+  <li>✨ Un système de pages dynamiques</li>
+  <li>✨ Un back-office puissant pour gérer le contenu</li>
+  <li>✨ Un code structuré et optimisé pour le SEO</li>
+</ul>
+
+<p>
+Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <strong>architecture solide</strong>.
+</p>
+
+<hr>
+
+<h2>🧰 Stack Technique</h2>
+
+<table>
+  <tr>
+    <th>Domaine</th>
+    <th>Technologies</th>
+  </tr>
+  <tr>
+    <td>🎨 Front-End</td>
+    <td>HTML5, CSS3, Bootstrap 5, JavaScript</td>
+  </tr>
+  <tr>
+    <td>🧩 Templating</td>
+    <td>EJS</td>
+  </tr>
+  <tr>
+    <td>⚙️ Back-End</td>
+    <td>NestJS (Node.js)</td>
+  </tr>
+  <tr>
+    <td>🗄 Base de données</td>
+    <td>Prisma / TypeORM</td>
+  </tr>
+  <tr>
+    <td>🔧 Outils</td>
+    <td>VS Code, Git, npm</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>📂 Structure du projet</h2>
+
+<pre>
+project/
+│
+├── public/               # CSS, JS, images
+├── views/                # Templates EJS
+├── src/                  # Code NestJS (API + Administration)
+├── node_modules/
+│
+├── package.json
+└── README.md
+</pre>
+
+<hr>
+
+<h2>📨 Contact</h2>
+
+<p>
+👤 <strong>Développeur :</strong> Ton nom<br>
+📧 <strong>Email :</strong> ton@email.com<br>
+🔗 <strong>Portfolio :</strong> https://tonportfolio.com
+</p>
+
+<hr>
+
+<p align="center"><strong>✨ Merci d’avoir consulté ce projet ! ✨</strong></p>
