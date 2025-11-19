@@ -1,44 +1,12 @@
-Projet Portfolio Interactif pour Artits
+✨ Présentation Générale du Projet
 
-  Creation des dossier Frontend et Backend
+Ce projet consiste à développer un portfolio interactif et moderne destiné à un artiste ou une agence créative.
+L’objectif est de proposer une plateforme élégante, responsive et facilement administrable, permettant de mettre en valeur les œuvres, les services et l’identité artistique.
 
-  Installation des modules Front-End:
+Le projet est structuré en trois grands blocs :
+1️⃣ Création d’interfaces front-end (HTML, CSS, Bootstrap)
+2️⃣ Dynamisation des pages grâce à EJS
+3️⃣ Développement d’un back-office administratif complet avec NestJS
 
-  Sass
+L’ensemble crée un système complet : élégant côté front, puissant côté back, et totalement évolutif.
 
-  Installation des modules Back-End:
-
-  Server => Express
-  DataBase => Prisma + MySQL
-
-  Problèmes a gérer:
-    - Page home responsive
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark container bg-black">
-      <a class="navbar-brand fw-bold" href="#"></a>
-
-      <!-- Bouton burger -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Liens du menu -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav text-white fs-6">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./Home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./About.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./Portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./Contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
