@@ -142,7 +142,7 @@ Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <
   </tr>
   <tr>
     <td>🎨 Front-End</td>
-    <td>HTML5, CSS3, Bootstrap 5, JavaScript</td>
+    <td>HTML5, CSS3, Bootstrap 5</td>
   </tr>
   <tr>
     <td>🧩 Templating</td>
@@ -150,15 +150,15 @@ Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <
   </tr>
   <tr>
     <td>⚙️ Back-End</td>
-    <td>NestJS (Node.js)</td>
+    <td>Javascript, NodeJS et NestJS</td>
   </tr>
   <tr>
     <td>🗄 Base de données</td>
-    <td>Prisma / TypeORM</td>
+    <td>Prisma et MySQL</td>
   </tr>
   <tr>
     <td>🔧 Outils</td>
-    <td>VS Code, Git, npm</td>
+    <td>VS Code, npm</td>
   </tr>
 </table>
 
@@ -183,7 +183,7 @@ project/
 <h2>📨 Contact</h2>
 
 <p>
-👤 <strong>Développeur :</strong> Ton nom<br>
+👤 <strong>Développeur :</strong> Jean-Michel Conti<br>
 📧 <strong>Email :</strong> ton@email.com<br>
 🔗 <strong>Portfolio :</strong> https://tonportfolio.com
 </p>
