@@ -1,10 +1,19 @@
-import express from 'express'
 import {PrimaClient} from '@prisma/client'
 
-
-const server = express()
+const server = require('express')
 const port = 3900
 const prisma = new PrimaClient()
+const path = require('path')
+const routePages = require('./routes/pages')
+
+// Configuration EJS
+server.set('view engine', 'ejs')
+server.set('views', path.join(__dirname, '../src/views'));
+
+
+// Routes
+server.use('/', routePages)
+
 
 server.use(express.json)
 
