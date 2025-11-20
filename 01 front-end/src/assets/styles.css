@@ -210,7 +210,9 @@ footer a {
   margin-right: 20px;
 }
 
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
 
 /* --PAGE: ABOUT-- */
 /* Title */
