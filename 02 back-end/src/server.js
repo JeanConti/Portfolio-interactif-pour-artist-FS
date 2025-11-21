@@ -8,7 +8,8 @@ const routePages = require('./routes/pages')
 
 // Configuration EJS
 server.set('view engine', 'ejs')
-server.set('views', path.join(__dirname, '../src/views'));
+server.set('view options', {delimiter: '?'})
+server.set('views', path.join(__dirname, '../src/views'))
 
 
 // Routes
