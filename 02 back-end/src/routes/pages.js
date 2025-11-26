@@ -1,5 +1,5 @@
-const server = require('express')
-const routerServer = express.router()
+const express = require('express')
+const routerServer = express.Router()
 const pagesController = require('../controllers/pagesController')
 
 routerServer.get('/Home', pagesController.home)

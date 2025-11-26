@@ -1,27 +1,31 @@
 exports.home = (req, res) => {
-  res.render('pages/home', {title: 'Home'})
+  res.render('pages/Home', {title: 'Home'})
 }
 
 exports.about = (req, res) => {
-  res.render('pages/about', {title: 'Portfolio: About'})
+  res.render('pages/About', {title: 'Portfolio: About'})
 }
 
 exports.contact = (req, res) => {
-  res.render('pages/contact', {title: 'Portfolio: Contact'})
+  res.render('pages/Contact', {title: 'Portfolio: Contact'})
 }
 
 exports.portfolio = (req, res) => {
-  res.render('pages/portfolio', {title: 'Portfolio: Portfolio'})
+  res.render('pages/Portfolio', {title: 'Portfolio: Portfolio'})
 }
-exports.portfolio = (req, res) => {
-  res.render('pages/portfolio/Project-Website', {title: 'Website'})
+
+exports.website = (req, res) => {
+  res.render('pages/Project-Website', {title: 'Website'})
 }
-exports.portfolio = (req, res) => {
-  res.render('pages/portfolio/Project-Marketing', {title: 'Marketing'})
+
+exports.marketing = (req, res) => {
+  res.render('pages/Project-Marketing', {title: 'Marketing'})
 }
-exports.portfolio = (req, res) => {
-  res.render('pages/portfolio/Project-Branding', {title: 'Branding'})
+
+exports.branding = (req, res) => {
+  res.render('pages/Project-Branding', {title: 'Branding'})
 }
-exports.portfolio = (req, res) => {
-  res.render('pages/Portfolio/Project-Photo-Edition', {title: 'Photo-Edition'})
+
+exports.photo_edition = (req, res) => {
+  res.render('pages/Project-Photo-Edition', {title: 'Photo-Edition'})
 }
