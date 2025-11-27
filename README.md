@@ -167,15 +167,32 @@ Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <
 <h2>📂 Structure du projet</h2>
 
 <pre>
-project/
+/portfolio interactif pour artist
 │
-├── public/               # CSS, JS, images
-├── views/                # Templates EJS
-├── src/                  # Code NestJS (API + Administration)
-├── node_modules/
+├── /01 front-end
+│   ├── /public
+│   ├── /src
+│   │   ├── assets/ (images, fonts, styles SASS)
+│   │   ├── components/ (React/Vue/Angular)
+│   │   ├── pages/ (Home, Galerie, Contact, About)
+│   │   ├── services/ (Appels API)
+│   │   └── main.js / App.js
 │
-├── package.json
-└── README.md
+├── /02 back-end
+│   ├── /src
+│   │   ├── routes/ (API endpoints : /artists, /works, /contact)
+│   │   ├── controllers/ (logique métier)
+│   │   ├── models/ (Prisma ou Sequelize)
+│   │   ├── middleware/ (auth, validation)
+│   │   └── app.js (Express server)
+│   ├── prisma/ (si Prisma)
+│
+├── /docs
+│   ├── architecture.md
+│   ├── api.md (documentation API)
+│   └── readme.md
+│
+└── package.json
 </pre>
 
 <hr>
@@ -184,7 +201,7 @@ project/
 
 <p>
 👤 <strong>Développeur :</strong> Jean-Michel Conti<br>
-📧 <strong>Email :</strong> ton@email.com<br>
+📧 <strong>Email :</strong> jeanmichelconti.dev@gmail.com<br>
 🔗 <strong>Portfolio :</strong> https://tonportfolio.com
 </p>
 

@@ -1,8 +1,8 @@
-// => Rendered HTML string
+// => Compilation des HTML
 let template = ejs.compile(str, options);
 template(data);
 
-// => Rendered HTML string
+// => Compilation des HTML
 ejs.render(str, data, options);
 
 ejs.renderFile(filename, data, options, function(err, str){
