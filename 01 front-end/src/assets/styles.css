@@ -189,10 +189,10 @@ hr {
   font: 'Gotham Rounded Light';
 }
 
-.last .list {
-  margin-left: 992px;
-  margin-top: -388px;
-}
+/* .last .list {
+  margin-left: 20rem;
+  
+} */
 
 .last .list ul {
   list-style: none;

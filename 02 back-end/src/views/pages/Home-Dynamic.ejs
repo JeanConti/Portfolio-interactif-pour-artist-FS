@@ -1,0 +1,240 @@
+<!-- Section Home -->
+<section
+  class='home bg-black text-white mt-5 mb-pt-5 pb-5 d-flex flex-column flex-md-row align-items-center responsive'>
+  <div class="picture d-block justify-content-end p-" style='width: 80%;'>
+    <img class='img-fluid rounded' src="<%= hero.image %>" alt="<%= hero.alt %>">
+  </div>
+  <div class='container-fluid align-items-center p-5'>
+    <h1 class='fs-1 text-align-center fs-1 mb-2' style='text-decoration: underline;'>
+      <%= hero.title %>
+    </h1>
+    <p class='fs-5'>
+      <%= hero.subtitle %>
+    </p>
+    <button class='btn btn-warning p-3 px-4 mx-5 me-2 mt-4 align-items'
+      onclick="window.location.href='<%= hero.buttonLink %>'">
+      <%= hero.buttonText %>
+    </button>
+    <address class='d-flex mt-5 fs-6'>
+      <p class='me-1'>
+        <%= contact.address.line1 %><br>
+          <%= contact.address.line2 %>
+      </p>
+      <p class='ms-5'>
+        <%= contact.phone %><br>
+          <a href="mailto:<%= contact.email %>">
+            <%= contact.email %>
+          </a>
+      </p>
+    </address>
+  </div>
+</section>
+
+<!-- Section We Give Unparalleled Flexibility -->
+<section class='title bg-primary w-100 col-md-6'>
+  <div class='container-fluid d-flex text-white justify-content-center p-3'>
+    <marquee behavior="scroll" direction="right">
+      <h1 class='text-white'>
+        <%= marqueeText %> <span style='color: yellow;'>*</span>
+          <%= marqueeText %>
+      </h1>
+    </marquee>
+  </div>
+</section>
+
+<!-- Section Services with cards -->
+<section class='services bg-white'>
+  <div class='container text-center my-5'>
+    <h2 class='mb-5 text-center'>
+      <%= servicesTitle %>
+    </h2>
+
+    <div class='row g-4'>
+      <% services.forEach(service=> { %>
+        <%- include('../partials/service-card', { service: service }) %>
+          <% }) %>
+    </div>
+  </div>
+</section>
+
+<!-- Section WIDE RANGE SERVICES -->
+<section class='wideRange d-flex flex-column flex-md-row text-align-center'>
+  <img src="<%= brandServices.image %>" class='' style='width: 50%; height: auto;' alt="<%= brandServices.alt %>">
+  <div class='list '>
+    <h2>
+      <%= brandServices.title %>
+    </h2>
+    <p class='fs-6 ms-5'>
+      <%= brandServices.description %>
+    </p>
+
+    <div class='container-fluid sub-list ms-5'>
+      <% brandServices.stats.forEach(stat=> { %>
+        <p style='margin-bottom: 5px;'>
+          <%= stat.label %>
+            <%= stat.value %>%
+        </p>
+        <div class="progress mb-4" style='height: 2%; width: 48%;'>
+          <div class="progress-bar text-black" style='width: <%= stat.value %>%;' aria-valuenow="<%= stat.value %>"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <% }) %>
+    </div>
+  </div>
+</section>
+
+<!-- Section Discover our selected projects -->
+<section class='selected-projects mt-5 mb-5'>
+  <div class="container-fluid">
+    <h2 class='mt-5 mb-5 text-center'>
+      <%= projectsTitle %>
+    </h2>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide col-md-6">
+      <div class="carousel-indicators">
+        <% carouselItems.forEach((item, index)=> { %>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<%= index %>"
+            class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>"
+            aria-label="Slide <%= index + 1 %>"></button>
+          <% }) %>
+      </div>
+      <div class="carousel-inner">
+        <% carouselItems.forEach((item, index)=> { %>
+          <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+            <img src="<%= item.image %>" class="d-block w-100" alt="<%= item.title %>">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class='<%= item.textClass || "" %>'>
+                <%= item.title %>
+              </h5>
+            </div>
+          </div>
+          <% }) %>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Table -->
+    <table class="table table-striped" style='width: 80%;'>
+      <tbody class='align-items-center'>
+        <% milestones.forEach(milestone=> { %>
+          <tr>
+            <td class='date'>
+              <%= milestone.year %>
+            </td>
+            <td class='w-75'>
+              <p class='fs-3'>
+                <%= milestone.title %>
+              </p>
+              <p>
+                <%= milestone.description %>
+              </p>
+            </td>
+            <td class='w-100 text-end'>
+              <%= milestone.role %>
+            </td>
+          </tr>
+          <% }) %>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class='video mt-5 mb-5'>
+  <div class="container-fluid">
+    <video src="<%= videoUrl %>" class='w-75 h-50' autoplay loop></video>
+  </div>
+</section>
+<hr class='opacity-50 w-25 d-flex'>
+
+<!-- Section Read our articles -->
+<section class="read-articles my-5 d-flex flex-md-row">
+  <div class="container-fluid ">
+    <h2 class='d-flex justify-content-center text-center'>
+      <%= articlesTitle %>
+    </h2>
+
+    <div class="carts mt-5 d-flex flex-md-row justify-content-sm-evenly">
+      <% articles.forEach(article=> { %>
+        <%- include('../partials/article-card', { article: article }) %>
+          <% }) %>
+    </div>
+
+    <!-- Grille logos -->
+    <div class="container my-5 mt-5">
+      <% for(let row=0; row < 2; row++) { %>
+        <div class="row g-0 border border-dark text-center">
+          <% for(let col=0; col < 4; col++) { %>
+            <% const logoIndex=row * 4 + col; %>
+              <% if (logoIndex < logos.length) { %>
+                <div class='col-3 border border-dark p-4'>
+                  <img src="<%= logos[logoIndex] %>" alt="Partner Logo <%= logoIndex + 1 %>">
+                </div>
+                <% } %>
+                  <% } %>
+        </div>
+        <% } %>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section
+  class='something-great bg-warning d-flex flex-column justify-content-center align-items-center py-5 text-black'>
+  <h1 class='my-5'>
+    <%= cta.title %>
+  </h1>
+  <p>
+    <%= cta.subtitle %>
+  </p>
+  <button class='btn p-2 px-4 mx-5 me-2 mt-4 align-items fs-6' onclick="window.location.href='<%= cta.buttonLink %>'">
+    <%= cta.buttonText %>
+  </button>
+</section>
+
+<!-- Newsletter Section -->
+<section class='last my-5 ms-5 d-flex flex column justify-content-center flex-column'>
+  <h5 class='text-black'>
+    <%= newsletter.title %>
+  </h5>
+  <input class='my-3 ps-2' type="email" placeholder='<%= newsletter.placeholder %>' />
+  <p class='text-black'>
+    <%= newsletter.disclaimer %>
+  </p>
+
+  <h4 class='text-black mt-5 mb-3'>Contact</h4>
+  <address class='fs-6 d-flex text-black'>
+    <p class='me-5'>
+      <%= contact.address.line1 %><br>
+        <%= contact.address.line2 %>
+    </p>
+    <p class=''>
+      <%= contact.phone %><br> <a href="mailto:<%= contact.email %>">
+          <%= contact.email %>
+        </a>
+    </p>
+  </address>
+
+  <div class="list mb-5">
+    <h4 class='text-black ms-5 mt-5 mb-3'>Links</h4>
+    <ul class='ms-3'>
+      <% footerLinks.forEach(link=> { %>
+        <li>
+          <a class='text-black' style='text-decoration: none;' href="<%= link.url %>">
+            <%= link.label %>
+          </a>
+        </li>
+        <% }) %>
+    </ul>
+  </div>
+</section>
