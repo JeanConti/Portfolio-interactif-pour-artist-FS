@@ -164,22 +164,6 @@ Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <
 
 <hr>
 
-<h2>📂 Structure du projet</h2>
-
-<pre>
-project/
-│
-├── public/               # CSS, JS, images
-├── views/                # Templates EJS
-├── src/                  # Code NestJS (API + Administration)
-├── node_modules/
-│
-├── package.json
-└── README.md
-</pre>
-
-<hr>
-
 <h2>📨 Contact</h2>
 
 <p>
