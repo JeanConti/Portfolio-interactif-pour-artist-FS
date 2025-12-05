@@ -164,6 +164,7 @@ Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <
 
 <hr>
 
+<<<<<<< HEAD
 <h2>📂 Structure du projet</h2>
 
 <pre>
@@ -197,6 +198,8 @@ Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <
 
 <hr>
 
+=======
+>>>>>>> 2ec2099fe217b956f874e3bce4826b7b593640b2
 <h2>📨 Contact</h2>
 
 <p>
