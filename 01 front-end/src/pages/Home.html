@@ -44,21 +44,26 @@
   </header>
 
   <!-- Section Home -->
-  <section
-    class='home bg-black text-white mt-5 mb-pt-5 pb-5 d-flex flex-column flex-md-row align-items-center responsive'>
-    <div class="picture d-block justify-content-end p-" style='width: 80%;'>
-      <img class='img-fluid rounded' src="../assets/images/laptops-593296.jpg" alt="reunion">
+  <section class='home bg-black text-white mt-5 pb-5'>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <div class="picture">
+            <img class='img-fluid rounded' src="../assets/images/laptops-593296.jpg" alt="reunion">
+          </div>
+        </div>
+        <div class='col-12 col-md-6 px-4 px-md-5'>
+          <h1 class='display-5 mb-3' style='text-decoration: underline;'>We Make <br>Creative Things
+            Everyday</h1>
+          <p class='fs-5 mb-4'>We are digital agency that helps immersive and engaging user experience that</p>
+          <button class='btn btn-warning p-3 px-4 mt-4'>VIEW OUR WORK</button>
+          <address class='d-flex flex-column flex-sm-row mt-5 fs-6'>
+            <p class='me-0 me-sm-4 mb-3 mb-sm-0'>27 Division St, NY <br> 10002, USA</p>
+            <p>+1 800 123 654<br> <a href="mailto:987frisk.agency@gmail.com"></a>987first.agency@gmail.com</p>
+          </address>
+        </div>
+      </div>
     </div>
-    <div class='container-fluid align-items-center p-5'>
-      <h1 class='fs-1 text-align-center fs-1 mb-2' style='text-decoration: underline;'>We Make <br>Creative Things
-        Everyday</h1>
-      <p class='fs-5'>We are digital agency that helps immersive and engaging user experience that</p>
-      <button class='btn btn-warning p-3 px-4  mx-5 me-2 mt-4 align-items' href='./Portfolio.html'>VIEW OUR
-        WORK</button>
-      <address class='d-flex mt-5 fs-6'>
-        <p class='me-1'>27 Division St, NY <br> 10002, USA</p>
-        <p class='ms-5'>+1 800 123 654<br> <a href="mailto:987frisk.agency@gmail.com"></a>987first.agency@gmail.com</p>
-      </address>
   </section>
 
   <!-- Section We Give Unparalleled Flexibility -->
@@ -77,7 +82,7 @@
     <div class='container text-center my-5'>
       <h2 class='mb-5 text-center'>WHAT WE CAN DO FOR<br> OUR CLIENTS</h2>
 
-      <div class='row g-4'> <!-- Me donne le num de colonnes -->
+      <div class='row g-4'> <!-- Bootstrap responsive grid -->
         <div class='col-12 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
           <div class='card p-3 shadow-sm'> <!-- Format card -->
             <div class="card-body">
@@ -88,7 +93,7 @@
           </div>
         </div>
 
-        <div class='col-6 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
+        <div class='col-12 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
           <div class='card p-3 shadow-sm'> <!-- Format card -->
             <div class="card-body">
               <h5 class='card-title'>Website Development</h5>
@@ -98,7 +103,7 @@
           </div>
         </div>
 
-        <div class='col-6 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
+        <div class='col-12 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
           <div class='card p-3 shadow-sm'> <!-- Format card -->
             <div class="card-body">
               <h5 class='card-title'>Illustration Modelling</h5>
@@ -108,7 +113,7 @@
           </div>
         </div>
 
-        <div class='col-6 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
+        <div class='col-12 col-sm-6 col-lg-3'> <!-- Espace de chaque colonne -->
           <div class='card p-3 shadow-sm'> <!-- Format card -->
             <div class="card-body">
               <h5 class='card-title'>Digital Marketing</h5>
@@ -122,39 +127,45 @@
   </section>
 
   <!-- Section WIDE RANGE SERVICES -->
-  <section class='wideRange d-flex text-align-center'>
-    <img src="../assets/images/coffee.jpg" style='width: 50%; height: 20%;' alt="">
-    <div class='list '>
-
-      <h2>WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
-      <p class='fs-6 ms-5'>We are a creative agency working with brands buildings insightful strategy, <br> creating
-        unique
-        design
-        and crafting
-        value</p>
-      <div class='container-fluid sub-list ms-5'>
-        <p style='margin-bottom: 5px;'>BRANDING 48%</p>
-        <div class="progress mb-4" style='height: 2%; width: 48%;'>
-          <div class="progress-bar text-black" style='width: 48%;' aria-valuenow="48" aria-valuemin="0"
-            aria-valuemax="100"></div>
+  <section class='wideRange'>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 p-0">
+          <img src="../assets/images/coffee.jpg" class='img-fluid w-100' alt="Coffee workspace">
         </div>
+        <div class='col-12 col-md-6 p-4 p-md-5'>
+          <h2 class="mb-4">WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
+          <p class='fs-6 mb-4'>We are a creative agency working with brands buildings insightful strategy, <br
+              class="d-none d-md-block"> creating
+            unique
+            design
+            and crafting
+            value</p>
+          <div class='sub-list'>
+            <p style='margin-bottom: 5px;'>BRANDING 48%</p>
+            <div class="progress mb-4" style='height: 2%; width: 48%;'>
+              <div class="progress-bar text-black" style='width: 48%;' aria-valuenow="48" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
 
-        <p style='margin-bottom: 5px;'>DEVELOPMENT 60%</p>
-        <div class="progress mb-4" style='height: 2%; width: 48%;'>
-          <div class="progress-bar text-black" style='width: 60%;' aria-valuenow="48" aria-valuemin="0"
-            aria-valuemax="100"></div>
-        </div>
+            <p style='margin-bottom: 5px;'>DEVELOPMENT 60%</p>
+            <div class="progress mb-4" style='height: 2%; width: 48%;'>
+              <div class="progress-bar text-black" style='width: 60%;' aria-valuenow="48" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
 
-        <p style='margin-bottom: 5px;'>ADVERSITING 60%</p>
-        <div class="progress mb-4" style='height: 2%; width: 48%;'>
-          <div class="progress-bar text-black" style='width: 60%;' aria-valuenow="48" aria-valuemin="0"
-            aria-valuemax="100"></div>
-        </div>
+            <p style='margin-bottom: 5px;'>ADVERSITING 60%</p>
+            <div class="progress mb-4" style='height: 2%; width: 48%;'>
+              <div class="progress-bar text-black" style='width: 60%;' aria-valuenow="48" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
 
-        <p style='margin-bottom: 5px;'>MARKETING 40%</p>
-        <div class="progress mb-4" style='height: 2%; width: 40%;'>
-          <div class="progress-bar text-black" style='width: 40%;' aria-valuenow="48" aria-valuemin="0"
-            aria-valuemax="100"></div>
+            <p style='margin-bottom: 5px;'>MARKETING 40%</p>
+            <div class="progress mb-4" style='height: 2%; width: 40%;'>
+              <div class="progress-bar text-black" style='width: 40%;' aria-valuenow="48" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -167,7 +178,7 @@
       <h2 class='mt-5 mb-5 text-center'>WHAT WE CAN DO FOR<br> OUR CLIENTS</h2>
 
       <!-- Carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide col-md-6">
+      <div id="carouselExampleIndicators" class="carousel slide mx-auto" style="max-width: 900px;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -347,9 +358,9 @@
           </address>
         </div>
         <!-- Right Column: Links -->
-        <div class=" ms-5 col-lg-12 ">
-          <h4 class='text-black mt-5 mt-lg-0 mb-3'>Links</h4>
+        <div class="col-lg-12">
           <ul class='list-unstyled'>
+            <h4 class='text-black mt-5 mt-lg-0 mb-3'>Links</h4>
             <li class="mb-2"><a class='text-black' style='text-decoration: none;' href="./About.html">About</a></li>
             <li class="mb-2"><a class='text-black' style='text-decoration: none;' href="./Portfolio.html">Portfolio</a>
             </li>

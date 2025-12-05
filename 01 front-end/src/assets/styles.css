@@ -76,13 +76,13 @@ h1,h2,h3,h4,h5{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
 }
 
 .services .card-title {
   font-weight: 600;
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
 }
 
 .services .card-text {
@@ -139,6 +139,49 @@ h1,h2,h3,h4,h5{
 .wideRange .list .progress .progress-bar {
   
   background-color: black;
+}
+
+/* Responsive Wide Range */
+@media (max-width: 767px) {
+  .wideRange {
+    flex-direction: column !important;
+  }
+  
+  .wideRange img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .wideRange .list {
+    margin-left: 0;
+    padding: 2rem 1rem;
+  }
+  
+  .wideRange .list h2 {
+    margin-left: 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .wideRange .list p {
+    margin-left: 0 !important;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .wideRange .list .sub-list {
+    margin-left: 0 !important;
+  }
+  
+  .wideRange .list .progress {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wideRange .list h2 {
+    font-size: 1.75rem;
+  }
 }
 
 /* Section Discover our selected projects */
@@ -203,9 +246,111 @@ hr {
   margin-left: 35%;
 }
 
-/* Section Read Ours Arcticles */
-.read-articles .container-fluid .carts .card {
-  width: 21%;
+/* Responsive carousel and table */
+@media (max-width: 767px) {
+  .selected-projects .carousel {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .selected-projects table {
+    width: 100% !important;
+    margin-left: 0 !important;
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .selected-projects table td {
+    font-size: 0.875rem;
+  }
+  
+  .selected-projects table .date {
+    font-size: 1rem;
+  }
+  
+  .video .container-fluid video {
+    width: 100% !important;
+  }
+  
+  hr {
+    margin-left: 0;
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .selected-projects .carousel {
+    width: 90%;
+    height: 400px;
+  }
+  
+  .selected-projects table {
+    margin-left: 5%;
+  }
+  
+  .video .container-fluid video {
+    width: 90% !important;
+  }
+}
+
+/* Section Read Ours Articles */
+.read-articles .card {
+  min-height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.read-articles .card:hover {
+  transform: scale(1.02);
+}
+
+.read-articles .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.read-articles .card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.read-articles .card-text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.read-articles .datecard-text {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+}
+
+/* Responsive adjustments for article cards */
+@media (max-width: 767px) {
+  .read-articles .card {
+    min-height: 250px;
+  }
+  
+  .read-articles .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .read-articles .card {
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  .read-articles .card {
+    min-height: 234px;
+  }
 }
 
 /* Grille logos */
@@ -213,6 +358,21 @@ hr {
   max-width: 100%;
   max-height: 90px;
   object-fit: contain;
+}
+
+/* Responsive logos grid */
+@media (max-width: 767px) {
+  .read-articles .container .row .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .read-articles .container .row .col-3 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
 }
 
 
@@ -232,10 +392,12 @@ hr {
   font: 'Gotham Rounded Light';
 }
 
-/* .last .list {
-  margin-left: 20rem;
+.last .list-unstyled {
+  margin-left: 885px;
+  margin-top: -343px;
+  justify-items: start;
   
-} */
+}
 
 .last .list ul {
   list-style: none;
@@ -441,14 +603,14 @@ margin-right: 20%;
 }
 
 .website-prevnex {
-  margin-top: 497px;
+  margin-top: 579px;
   margin-bottom: 150px;
 }
 
 .info-project {
   max-width: 250px;
-  margin-left: 1133px;
-  margin-top: -695px;
+  margin-left: 937px;
+  margin-top: -580px;
   display: flex;
   flex-direction: column;
   gap: .9rem; /* espace entre chaque bloc */
