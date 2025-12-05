@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5{
   background-color: hsl(202, 13%, 17%);
 }
 
-.home img {
+.home .picture img {
   width: 110%;
   opacity: .4;
 }
