@@ -408,12 +408,14 @@ hr {
 }
 
 /* Footer */
-footer p {
-  margin-right: 1000px;
+
+footer {
+  border-top: 1px solid #000;
 }
 
-footer a {
-  margin-right: 20px;
+
+footer .logos-apps {
+  margin-left: auto;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -641,6 +643,7 @@ margin-right: 20%;
 project-flexibility {
   margin-top: 100px;
 }
+
 
 /* --Responsive-- */
 
