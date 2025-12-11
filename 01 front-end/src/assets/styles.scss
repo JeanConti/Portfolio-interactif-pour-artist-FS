@@ -1,7 +1,14 @@
 // Variables
 $header-height: 70px;
 
-
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 // Navbar
 .header-container {
@@ -60,4 +67,9 @@ body {
 .navbar-nav .nav-link:hover {
   color: #ffc107;
   transition: 0.3s;
+}
+
+
+.last .list-unstyled {
+  margin-left: $grid-breakpoints(sm);
 }

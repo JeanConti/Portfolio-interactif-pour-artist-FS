@@ -246,7 +246,7 @@ hr {
   margin-left: 35%;
 }
 
-/* Responsive carousel and table */
+/* Carousel et table responsive */
 @media (max-width: 767px) {
   .selected-projects .carousel {
     width: 100%;
@@ -330,7 +330,7 @@ hr {
   opacity: 0.9;
 }
 
-/* Responsive adjustments for article cards */
+/* Adjustments Responsive des cards */
 @media (max-width: 767px) {
   .read-articles .card {
     min-height: 250px;
@@ -360,7 +360,7 @@ hr {
   object-fit: contain;
 }
 
-/* Responsive logos grid */
+/* Grille logo responsive */
 @media (max-width: 767px) {
   .read-articles .container .row .col-3 {
     flex: 0 0 50%;
