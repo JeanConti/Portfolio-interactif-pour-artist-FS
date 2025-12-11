@@ -3,7 +3,9 @@
   font-family: 'Gotham';
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
 }
+
 
 @font-face {
   font-family: 'Gotham Rounded';
@@ -393,8 +395,8 @@ hr {
 }
 
 .last .list-unstyled {
-  margin-left: 885px;
-  margin-top: -343px;
+  /* margin-left: 885px; */
+  /* margin-top: -343px; */
   justify-items: start;
   
 }
