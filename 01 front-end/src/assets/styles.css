@@ -3,33 +3,17 @@
   font-family: 'Gotham';
   margin: 0;
   padding: 0;
-  scrollbar-width: none;
-}
-
-
-@font-face {
-  font-family: 'Gotham';
-  src: url(./fonts/Gotham-Rounded/GothamRnd-Medium.otf) format('opentype');
-  font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url(./fonts/Gotham-Rounded/GothamRnd-Light.otf) format('opentype');
-  font-weight: 300;
+  font-family: 'Gotham Rounded';
+  src: url(./fonts/Gotham-Rounded/);
+  src: url(./fonts/Gotham-Rounded/GothamRnd-Light.otf);
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Gotham', sans-serif;
-  font-weight: 500;
+h1,h2,h3,h4,h5{
+  font: './fonts/Gotham Rounded/GothamRnd-Medium.otf';
 }
-
-p {
-  font-family: 'Gotham', sans-serif;
-  font-weight: 700;
-  line-height: 1.6;
-}
-
 
 /* --PAGE: HOME-- */
 
@@ -68,57 +52,14 @@ p {
   background-color: hsl(202, 13%, 17%);
 }
 
-.home .picture img {
+.home img {
   width: 110%;
   opacity: .4;
 }
 
-/* Styles uniformes pour toutes les cartes */
-.card {
-  border-radius: 8px;
-  height: 100%;
-}
-
-
-
-/* Services cards */
 .services .container .card {
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-}
-
-.services .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* padding: 1.5rem; */
-}
-
-.services .card-title {
-  font-weight: 600;
-  margin-bottom: 1rem;
-  /* font-size: 1.25rem; */
-}
-
-.services .card-text {
-  flex-grow: 1;
-  margin-bottom: 1rem;
-  color: #666;
-}
-
-.services .card a {
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-
-.portfolio .card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
 
 /* --SECTION WIDE RANGE SERVICES-- */
@@ -155,49 +96,6 @@ p {
 .wideRange .list .progress .progress-bar {
   
   background-color: black;
-}
-
-/* Responsive Wide Range */
-@media (max-width: 767px) {
-  .wideRange {
-    flex-direction: column !important;
-  }
-  
-  .wideRange img {
-    width: 100% !important;
-    height: auto !important;
-  }
-  
-  .wideRange .list {
-    margin-left: 0;
-    padding: 2rem 1rem;
-  }
-  
-  .wideRange .list h2 {
-    margin-left: 0;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  
-  .wideRange .list p {
-    margin-left: 0 !important;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  
-  .wideRange .list .sub-list {
-    margin-left: 0 !important;
-  }
-  
-  .wideRange .list .progress {
-    width: 100% !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .wideRange .list h2 {
-    font-size: 1.75rem;
-  }
 }
 
 /* Section Discover our selected projects */
@@ -262,111 +160,9 @@ hr {
   margin-left: 35%;
 }
 
-/* Carousel et table responsive */
-@media (max-width: 767px) {
-  .selected-projects .carousel {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-  }
-  
-  .selected-projects table {
-    width: 100% !important;
-    margin-left: 0 !important;
-    display: block;
-    overflow-x: auto;
-  }
-  
-  .selected-projects table td {
-    font-size: 0.875rem;
-  }
-  
-  .selected-projects table .date {
-    font-size: 1rem;
-  }
-  
-  .video .container-fluid video {
-    width: 100% !important;
-  }
-  
-  hr {
-    margin-left: 0;
-    width: 50% !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .selected-projects .carousel {
-    width: 90%;
-    height: 400px;
-  }
-  
-  .selected-projects table {
-    margin-left: 5%;
-  }
-  
-  .video .container-fluid video {
-    width: 90% !important;
-  }
-}
-
-/* Section Read Ours Articles */
-.read-articles .card {
-  min-height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.read-articles .card:hover {
-  transform: scale(1.02);
-}
-
-.read-articles .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.read-articles .card-img-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.5rem;
-}
-
-.read-articles .card-text {
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-.read-articles .datecard-text {
-  font-size: 0.875rem;
-  margin-bottom: 0.75rem;
-  opacity: 0.9;
-}
-
-/* Adjustments Responsive des cards */
-@media (max-width: 767px) {
-  .read-articles .card {
-    min-height: 250px;
-  }
-  
-  .read-articles .card-text {
-    font-size: 0.95rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .read-articles .card {
-    min-height: 280px;
-  }
-}
-
-@media (min-width: 992px) {
-  .read-articles .card {
-    min-height: 234px;
-  }
+/* Section Read Ours Arcticles */
+.read-articles .container-fluid .carts .card {
+  width: 21%;
 }
 
 /* Grille logos */
@@ -374,21 +170,6 @@ hr {
   max-width: 100%;
   max-height: 90px;
   object-fit: contain;
-}
-
-/* Grille logo responsive */
-@media (max-width: 767px) {
-  .read-articles .container .row .col-3 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .read-articles .container .row .col-3 {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
 }
 
 
@@ -408,11 +189,9 @@ hr {
   font: 'Gotham Rounded Light';
 }
 
-.last .list-unstyled {
-  /* margin-left: 885px; */
-  /* margin-top: -343px; */
-  justify-items: start;
-  
+.last .list {
+  margin-left: 992px;
+  margin-top: -388px;
 }
 
 .last .list ul {
@@ -424,14 +203,12 @@ hr {
 }
 
 /* Footer */
-
-footer {
-  border-top: 1px solid #000;
+footer p {
+  margin-right: 1000px;
 }
 
-
-footer .logos-apps {
-  margin-left: auto;
+footer a {
+  margin-right: 20px;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -582,7 +359,7 @@ margin-right: 20%;
 }
 
 .portfolio-title .title-img img{
-  /* display: block; */
+  display: block;
   opacity: 0.6;
 }
 
@@ -621,14 +398,14 @@ margin-right: 20%;
 }
 
 .website-prevnex {
-  margin-top: 579px;
+  margin-top: 497px;
   margin-bottom: 150px;
 }
 
 .info-project {
   max-width: 250px;
-  margin-left: 937px;
-  margin-top: -580px;
+  margin-left: 1133px;
+  margin-top: -695px;
   display: flex;
   flex-direction: column;
   gap: .9rem; /* espace entre chaque bloc */
@@ -659,7 +436,6 @@ margin-right: 20%;
 project-flexibility {
   margin-top: 100px;
 }
-
 
 /* --Responsive-- */
 
