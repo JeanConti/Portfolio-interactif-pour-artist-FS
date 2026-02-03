@@ -36,11 +36,6 @@ server.post('contact',
 )
 
 
-// Sécuriser la BD
-await prisma.user.findUnique({
-  where: { email: email },
-})
-
 // Configuration EJS
 server.set('view engine', 'ejs')
 server.set('view options', {delimiter: '$'}) // Delimitador global
@@ -81,6 +76,9 @@ server.delete('/api/artworks', (req, res) => {
   })
   res.json(newArtwork)
 })
+
+server.use(express.json())
+server.use('/', require('./routes/Contact'))
 
 
 server.listen(port, () => console.log(`Connectée au port: ${port}!`))

@@ -131,7 +131,7 @@
             and let's start something</p>
           </p>
 
-          <form class='d-flex flex-column justify-content-center w-75 ms-5 mt-5' action="">
+          <form class='d-flex flex-column justify-content-center w-75 ms-5 mt-5' id='contact-form' action="">
             <div class='namemail d-flex d-row'>
               <input class='col-2 mb-5 me-5 p-2' type="text" id='fullname' placeholder=' Full name*' required>
               <input class='col-2 mb-5 p-2' type="email" id='email' placeholder='Email address*' required>
@@ -143,6 +143,30 @@
           <button href='./Contact.html' type="button" class="btn bg-black mt-5 ms-5 p-3 text-white">SEND
             MESSAGE</button>
         </div>
+        <script>
+          document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault()
+
+            const formData = new FormData(this)
+            const data = Object.fromEntries(formData.entries())
+            console.log(data)
+
+            const response = fetch('/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/son' },
+              body: JSON.stringify(data)
+            })
+
+            const result = response.json()
+
+            if (result.success) {
+              const message = document.getElementById('message')
+              message.innerText = 'Votre message a bien été envoyé'
+              message.style.display = 'block'
+              this.reset()
+            }
+          })
+        </script>
       </section>
 
       <!-- Section We Give Unparalleled Flexibility -->
