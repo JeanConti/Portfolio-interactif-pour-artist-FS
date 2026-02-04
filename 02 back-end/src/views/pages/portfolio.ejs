@@ -57,53 +57,55 @@
   <!-- Section Portfolio -->
   <section class="portfolio justify-content mt-5">
     <div class="container">
-      <div class="row ms-5">
-        <div class="col-md-6">
-          <div class="card border-0" style="width: 33rem;">
-            <a href="../pages/Project-Website.html"><img src="../assets/images/laptop-development.jpeg"
-                class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Website Development</h5>
-              <p class="card-text">Development/Marketing/Branding</p>
-            </div>
-          </div>
-
+      <div class="row">
+        <!-- Sidebar: List of Projects -->
+        <div class="col-md-4">
+          <ul class="list-group">
+            <% projects.forEach(project=> { %>
+              <li class="list-group-item <%= currentProject && currentProject.slug === project.slug ? 'active' : '' %>">
+                <a href="/portfolio/<%= project.slug %>"
+                  class="<%= currentProject && currentProject.slug === project.slug ? 'text-white' : 'text-decoration-none' %>">
+                  <%= project.title %>
+                </a>
+              </li>
+              <% }) %>
+          </ul>
         </div>
-        <div class="col-md-6">
-          <div class="card border-0" style="width: 33rem;">
-            <a href="../pages/Project-Marketing.html"><img
-                src="../assets/images/laptop-on-desk-with-branding-presentation.jpg" class="card-img-top"></a>
-            <div class="card-body">
-              <h5 class="card-title">Digital Marketing</h5>
-              <p class="card-text">Development/Marketing/Branding</p>
+
+        <!-- Main Content: Project Details -->
+        <div class="col-md-8">
+          <% if (currentProject) { %>
+            <div class="card border-0">
+              <div class="card-body">
+                <h2 class="card-title mb-4">
+                  <%= currentProject.title %>
+                </h2>
+                <p class="card-text">
+                  <%= currentProject.content %>
+                </p>
+
+                <!-- Commentaires -->
+                <div class="mt-5">
+                  <h4>Laisser un commentaire</h4>
+                  <form method="POST" action="/comments">
+                    <div class="mb-3">
+                      <textarea name="comment" class="form-control" rows="3"
+                        placeholder="Votre commentaire..."></textarea>
+                    </div>
+                    <input type="hidden" name="slug" value="<%= currentProject.slug %>">
+                    <button type="submit" class="btn btn-primary">Commenter</button>
+                  </form>
+                </div>
+              </div>
             </div>
-          </div>
+            <% } else { %>
+              <div class="alert alert-info">
+                <p class="mb-0">Sélectionnez un projet dans la liste pour voir les détails.</p>
+              </div>
+              <% } %>
         </div>
       </div>
 
-      <div class="row mt-5 ms-5">
-        <div class="col-md-6">
-          <div class="card border-0" style="width: 35rem;">
-            <a href="../pages/Project-Branding.html"><img src="../assets/images/Branding-design.jpg"
-                class="card-img-top" style='width: 100%;'></a>
-            <div class="card-body">
-              <h5 class="card-title">Branding Design</h5>
-              <p class="card-text">Development/Marketing/Branding</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-6">
-          <div class="card border-0" style="width: 33rem;">
-            <a href="../pages/Project-Photo-Edition.html"><img src="../assets/images/edition-photo.jpg"
-                class="card-img-top" style='width: 100%;'></a>
-            <div class="card-body">
-              <h5 class="card-title">Photo Edition</h5>
-              <p class="card-text">Development/Marketing/Branding</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
