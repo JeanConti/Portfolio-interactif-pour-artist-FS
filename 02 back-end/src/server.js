@@ -10,7 +10,6 @@ const prisma = new PrismaClient()
 const { body } = require('express-validator')
 
 
-
 // Sécurité
 server.use(helmet())
 // Prend en charge les requêtes multi-origines sécurisées et les transferts de données entre des navigateurs et des serveurs web
@@ -51,12 +50,6 @@ server.use('/', routePages)
 // Middleware
 server.use(express.json())
 
-
-// Récupérer les oeuvres
-/* server.get('/api/artworks', (req, res) => {
-  const artworks = prisma.artworks.findMany()
-  res.json(artworks)
-}) */
 
 // Ajouter une oeuvre
 server.post('/api/artworks', (req, res) => {
