@@ -12,25 +12,30 @@ const { body } = require('express-validator')
 
 // Sécurité
 server.use(helmet())
+// Middleware pour parser le JSON
+server.use(express.json())
 // Prend en charge les requêtes multi-origines sécurisées et les transferts de données entre des navigateurs et des serveurs web
 server.use(cors({
-  origin: port,
   origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }))
 
 // Évite les attaques XSS et SQL injection
-server.post('contact',
+server.post('/contact',
   body('email').isEmail().normalizeEmail(),
   body('message').trim().escape(),
   body('name').trim().escape(),
-  (req, res) => {
-    const {email, message, name} = req.body
-    const newMessage = prisma.message.create({
-      data: {email, message, name},
-    })
-    res.json(newMessage)
+  async (req, res) => {
+    try {
+      const {email, message, name} = req.body
+      const newMessage = await prisma.message.create({
+        data: {email, message, name},
+      })
+      res.json(newMessage)
+    } catch (error) {
+      res.status(500).json({error: 'Erreur lors de la création du message'})
+    }
   }
 )
 
@@ -48,30 +53,32 @@ server.use(express.static(path.join(__dirname, '../../01 front-end')))
 server.use('/', routePages)
 
 // Middleware
-server.use(express.json())
-
-
 // Ajouter une oeuvre
-server.post('/api/artworks', (req, res) => {
-  const {titre, annee, categorie, imageUrl} = req.body
-  const newArtwork = prisma.artwork.create({
-    data: {titre, annee, categorie, imageUrl},
-  })
-  res.json(newArtwork)
+server.post('/api/artworks', async (req, res) => {
+  try {
+    const {titre, annee, categorie, imageUrl} = req.body
+    const newArtwork = await prisma.artwork.create({
+      data: {titre, annee, categorie, imageUrl},
+    })
+    res.json(newArtwork)
+  } catch (error) {
+    res.status(500).json({error: 'Erreur lors de la création de l\'œuvre'})
+  }
 })
 
 
-// Suprimer une oeuvre
-server.delete('/api/artworks', (req, res) => {
-  const {titre, annee, categorie, imageUrl} = req.body
-  const deleteArtwork = prisma.artwork.delete({
-    data: {titre, annee, categorie, imageUrl},
-  })
-  res.json(newArtwork)
+// Supprimer une oeuvre
+server.delete('/api/artworks/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleteArtwork = await prisma.artwork.delete({
+      where: { id: parseInt(id) },
+    })
+    res.json(deleteArtwork)
+  } catch (error) {
+    res.status(500).json({error: 'Erreur lors de la suppression de l\'œuvre'})
+  }
 })
-
-server.use(express.json())
-server.use('/', require('./routes/Contact'))
 
 
 server.listen(port, () => console.log(`Connectée au port: ${port}!`))

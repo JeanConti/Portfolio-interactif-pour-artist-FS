@@ -12,6 +12,7 @@ model Artist {
   name        String
   bio         String
   artworks    Artwork[] 
+  comments    Comment[]
 }
   
 model Artwork {
@@ -22,11 +23,37 @@ model Artwork {
   imageUrl    String
   artistId    Int
   artist      Artist      @relation(fields: [artistId], references: [id])
+  comments    Comment[]
 }
 
-model User {
+model Admin {
   id          Int         @id @default(autoincrement())
   email       String      @unique
   password    String
-  rol         String      @default("admin")
+  role        String      @default("admin")
+}
+
+model User {
+  id       Int       @id @default(autoincrement())
+  email    String    @unique
+  password String
+  role     String    @default("user")
+  comments Comment[]
+}
+
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  content   String
+  createdAt DateTime @default(now())
+  
+  // Relations
+  artworkId Int
+  artwork   Artwork @relation(fields: [artworkId], references: [id])
+  
+  userId    Int
+  user      User    @relation(fields: [userId], references: [id])
+  
+  artistId  Int
+  artist    Artist  @relation(fields: [artistId], references: [id])
 }
