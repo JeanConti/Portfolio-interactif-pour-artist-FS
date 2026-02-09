@@ -27,7 +27,7 @@ routerServer.post('Contact', (req, res) => {
 
     transporter.sendMail({
       from: email,
-      to: "tonemail@gmail.com",
+      to: "didier.genetier7@gmail.com",
       subject: "Nouveau message depuis le portfolio",
       html: `
         <h3>Nouveau message</h3>

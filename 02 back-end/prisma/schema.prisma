@@ -18,6 +18,9 @@ model Artist {
 model Artwork {
   id          Int         @id @default(autoincrement())
   titre       String
+  slug        String      @unique
+  content     String?     @db.Text
+  description String?     @db.Text
   annee       Int
   categorie   String
   imageUrl    String
@@ -41,7 +44,6 @@ model User {
   comments Comment[]
 }
 
-
 model Comment {
   id        Int      @id @default(autoincrement())
   content   String
@@ -56,4 +58,13 @@ model Comment {
   
   artistId  Int
   artist    Artist  @relation(fields: [artistId], references: [id])
+}
+
+model Article {
+  id        Int      @id @default(autoincrement())
+  title     String
+  slug      String   @unique
+  content   String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
