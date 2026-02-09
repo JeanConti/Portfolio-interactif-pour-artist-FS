@@ -46,18 +46,21 @@ model User {
 
 model Comment {
   id        Int      @id @default(autoincrement())
-  content   String
+  content   String   @db.Text
   createdAt DateTime @default(now())
   
   // Relations
-  artworkId Int
-  artwork   Artwork @relation(fields: [artworkId], references: [id])
+  artworkId Int?
+  artwork   Artwork? @relation(fields: [artworkId], references: [id])
   
-  userId    Int
-  user      User    @relation(fields: [userId], references: [id])
+  articleId Int?
+  article   Article? @relation(fields: [articleId], references: [id])
   
-  artistId  Int
-  artist    Artist  @relation(fields: [artistId], references: [id])
+  userId    Int?
+  user      User?    @relation(fields: [userId], references: [id])
+  
+  artistId  Int?
+  artist    Artist?  @relation(fields: [artistId], references: [id])
 }
 
 model Article {
@@ -67,4 +70,5 @@ model Article {
   content   String   @db.Text
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  comments  Comment[]
 }

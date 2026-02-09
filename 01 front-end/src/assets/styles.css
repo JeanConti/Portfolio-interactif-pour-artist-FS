@@ -15,6 +15,22 @@ h1,h2,h3,h4,h5{
   font: './fonts/Gotham Rounded/GothamRnd-Medium.otf';
 }
 
+/* Animation pour le texte défilant (remplacement de marquee) */
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.scrolling-text:hover {
+  animation-play-state: paused;
+}
+
 /* --PAGE: HOME-- */
 
 /* --SECTION HOME-- */

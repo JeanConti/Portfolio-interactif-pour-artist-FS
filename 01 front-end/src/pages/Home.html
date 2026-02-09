@@ -40,8 +40,7 @@
             <li class="nav-item"><a class="nav-link text-white fw-bold" href="./Portfolio.html">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link text-white fw-bold" href="./Contact.html">Contact</a></li>
           </ul>
-          <button class="btn btn-light fw-bold"><a href="./Contact.html" class=' text-black'
-              style='text-decoration: none;'>Login</a></button>
+          <a href="./Contact.html" class="btn btn-light fw-bold text-black" style="text-decoration: none;">Login</a>
         </div>
 
       </div>
@@ -54,15 +53,16 @@
       <div class="row align-items-center">
         <div class="col-12 col-md-6 mb-4 mb-md-0">
           <div class="picture">
-            <img class='img-fluid rounded' src="../assets/images/laptops-593296_1280.jpg" alt="reunion">
+            <img class='img-fluid rounded' src="../assets/images/laptops-593296_1280.jpg"
+              alt="Espace de travail avec des ordinateurs portables lors d'une réunion d'équipe">
           </div>
         </div>
         <div class='col-12 col-md-6 px-4 px-md-5 mt-3'>
           <h1 class='mb-3' style='text-decoration: underline;'>We Make <br>Creative Things
             Everyday</h1>
           <p class='fs-5 mb-4'>We are digital agency that helps immersive and engaging user experience that</p>
-          <button class='btn btn-warning p-3 px-4 mt-4 fw-bold'><a href="Portfolio.html"
-              style='text-decoration: none; color: black;'>VIEW OUR WORK</a></button>
+          <a href="Portfolio.html" class="btn btn-warning p-3 px-4 mt-4 fw-bold"
+            style="text-decoration: none; color: black;">VIEW OUR WORK</a>
           <address class='d-flex flex-column flex-sm-row mt-5 fs-6'>
             <p class='me-0 me-sm-4 mb-3 mb-sm-0'>27 Division St, NY <br> 10002, USA</p>
             <p>+1 800 123 654<br> <a href="mailto:987frisk.agency@gmail.com"></a>987first.agency@gmail.com</p>
@@ -74,12 +74,11 @@
 
   <!-- Section We Give Unparalleled Flexibility -->
   <section class='title bg-primary w-100 col-md-6'>
-    <div class='container-fluid d-flex text-white justify-content-center p-3'>
-      <marquee behavior="scroll" direction="right">
-        <h1 class='text-white'>We Give Unparalleled Flexibility <span style='color: yellow;'>*</span> We Give
-          Unparalleled Flexibility
-        </h1>
-      </marquee>
+    <div class="container-fluid d-flex text-white justify-content-center p-3 overflow-hidden">
+      <div class="scrolling-text text-nowrap fw-bold fs-1">
+        We Give Unparalleled Flexibility <span style="color: yellow;">*</span> We Give Unparalleled Flexibility <span
+          style="color: yellow;">*</span> We Give Unparalleled Flexibility
+      </div>
     </div>
   </section>
 
@@ -137,7 +136,8 @@
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-12 col-md-6 p-0">
-          <img src="../assets/images/coffee.jpg" class='img-fluid w-100' alt="Coffee workspace">
+          <img src="../assets/images/coffee.jpg" class='img-fluid w-100'
+            alt="Bureau de designer avec café et matériel de travail">
         </div>
         <div class='col-12 col-md-6 p-4 p-md-5'>
           <h2 class="mb-4">WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
@@ -198,7 +198,7 @@
           <div class="carousel-item active">
             <img src="../assets/images/laptop-development.jpeg" class="d-block w-100" alt="planetary-image">
             <div class="carousel-caption d-none d-md-block">
-              <h5 class='text-black'>Website Development</h5>
+              <h5 class='text-black'>Développement de sites web</h5>
             </div>
           </div>
           <div class="carousel-item">
@@ -351,7 +351,9 @@
         <!-- Left Column: Newsletter & Contact -->
         <div class="col-12 col-mb-12 mb-4 ">
           <h5 class='text-black mb-3'>Get valuable strategy, culture and brand insights straight to you inbox</h5>
-          <input class='my-3 ps-2 w-100' style="max-width: 400px;" type="email" placeholder='Your mail here' />
+          <label for="newsletter-email" class="visually-hidden">Votre email pour la newsletter</label>
+          <input id="newsletter-email" class='my-3 ps-2 w-100' style="max-width: 400px;" type="email"
+            placeholder='Your mail here' aria-label="Votre email pour la newsletter" />
           <p class='text-black'>By signing up to receive emails from Motto, you agree to <br
               class="d-none d-md-block">our Privacy Politicy. We treat
             you info

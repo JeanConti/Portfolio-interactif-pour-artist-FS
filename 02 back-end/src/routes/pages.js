@@ -12,7 +12,7 @@ routerServer.get('/Portfolio/Project-Marketing', pagesController.marketing)
 routerServer.get('/Portfolio/Project-Branding', pagesController.branding)
 routerServer.get('/Portfolio/Project-Photo-Edition', pagesController.photo_edition)
 
-routerServer.post('Contact', (req, res) => {
+routerServer.post('/Contact', async (req, res) => {
   const {name, email, message} = req.body
   
   try {
@@ -25,7 +25,7 @@ routerServer.post('Contact', (req, res) => {
       }
     });
 
-    transporter.sendMail({
+    await transporter.sendMail({
       from: email,
       to: "didier.genetier7@gmail.com",
       subject: "Nouveau message depuis le portfolio",
@@ -40,8 +40,8 @@ routerServer.post('Contact', (req, res) => {
     res.json({ success: true })
 
   } catch (error) {
-    console.error(error)
-    res.status(500).json({ success: false })
+    console.error("Erreur d'envoi d'email:", error)
+    res.status(500).json({ success: false, error: error.message })
   }
 })
 
