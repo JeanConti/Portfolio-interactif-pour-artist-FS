@@ -13,40 +13,40 @@
 <h2>✨ Présentation Générale du Projet</h2>
 
 <p>
-Ce projet consiste à développer un <strong>portfolio interactif et moderne</strong> destiné à un artiste ou une agence créative.
-L’objectif est de proposer une plateforme élégante, responsive et facilement administrable, permettant de mettre en valeur les œuvres, les services et l’identité artistique.
+  Ce projet consiste à développer un <strong>portfolio interactif et moderne</strong> destiné à un artiste ou une agence créative.
+  L'objectif est de proposer une plateforme élégante, responsive et facilement administrable, permettant de mettre en valeur les œuvres, les services et l'identité artistique.
 </p>
 
 <p>
-Le projet est construit en trois blocs :
+  Le projet est construit en trois blocs :
 </p>
 
 <ul>
-  <li>1️⃣ <strong>Création d’interfaces front-end</strong> (HTML, CSS, Bootstrap)</li>
+  <li>1️⃣ <strong>Création d'interfaces front-end</strong> (HTML, CSS, Bootstrap)</li>
   <li>2️⃣ <strong>Dynamisation des pages</strong> via EJS</li>
-  <li>3️⃣ <strong>Développement d’un back-office</strong> complet avec NestJS</li>
+  <li>3️⃣ <strong>Développement d'un back-office</strong> complet avec NestJS</li>
 </ul>
 
-<p>L’ensemble forme un système complet : <strong>élégant côté front, puissant côté back</strong>.</p>
+<p>L'ensemble forme un système complet : <strong>élégant côté front, puissant côté back</strong>.</p>
 
 <hr>
 
 <h2>🎯 1 — Création des pages HTML avec CSS & Bootstrap</h2>
 
 <p>
-Cette première étape consiste à concevoir l’interface visuelle et l’ergonomie du portfolio.
-Elle comprend :
+  Cette première étape consiste à concevoir l'interface visuelle et l'ergonomie du portfolio.
+  Elle comprend :
 </p>
 
 <ul>
   <li>Création des pages principales : Home, About, Portfolio, Contact</li>
   <li>Utilisation du framework <strong>Bootstrap 5</strong> pour assurer la responsivité</li>
   <li>Mise en place de : navbar responsive, carrousels, cartes de services, grilles, etc.</li>
-  <li>Animations et transitions fluides pour améliorer l’expérience utilisateur</li>
+  <li>Animations et transitions fluides pour améliorer l'expérience utilisateur</li>
 </ul>
 
 <p>
-Objectif : créer une base solide, moderne et adaptable sur tous les écrans.
+  Objectif : créer une base solide, moderne et adaptable sur tous les écrans.
 </p>
 
 <hr>
@@ -54,8 +54,8 @@ Objectif : créer une base solide, moderne et adaptable sur tous les écrans.
 <h2>⚙️ 2 — Dynamisation du front avec EJS</h2>
 
 <p>
-Pour rendre les pages plus modulaires et éviter la duplication, la structure du site a été reconstruite avec
-<strong>EJS</strong>.
+  Pour rendre les pages plus modulaires et éviter la duplication, la structure du site a été reconstruite avec
+  <strong>EJS</strong>.
 </p>
 
 <p>Grâce à EJS :</p>
@@ -64,19 +64,19 @@ Pour rendre les pages plus modulaires et éviter la duplication, la structure du
   <li>Création de partials (header, footer, navigation)</li>
   <li>Injection dynamique du contenu dans les vues</li>
   <li>Structure plus simple, propre et maintenable</li>
-  <li>Centralisation de la logique d’affichage</li>
+  <li>Centralisation de la logique d'affichage</li>
 </ul>
 
 <p>
-Résultat : un site dynamique qui combine structure HTML et rendu basé sur les données.
+  Résultat : un site dynamique qui combine structure HTML et rendu basé sur les données.
 </p>
 
 <hr>
 
-<h2>🛡 3 — Développement de l’administration avec NestJS</h2>
+<h2>🛡 3 — Développement de l'administration avec NestJS</h2>
 
 <p>
-La troisième partie du projet consiste à développer un <strong>back-office sécurisé</strong> avec <strong>NestJS</strong>.
+  La troisième partie du projet consiste à développer un <strong>back-office sécurisé</strong> avec <strong>NestJS</strong>.
 </p>
 
 <p>Fonctionnalités clés :</p>
@@ -84,13 +84,13 @@ La troisième partie du projet consiste à développer un <strong>back-office s�
 <ul>
   <li>API REST complète (modules, controllers, services)</li>
   <li>CRUD pour gérer les projets, images, services et utilisateurs</li>
-  <li>Système d’authentification et de sécurisation des routes</li>
+  <li>Système d'authentification et de sécurisation des routes</li>
   <li>Connexion à la base de données via Prisma ou TypeORM</li>
   <li>Administration simple pour modifier le contenu du site</li>
 </ul>
 
 <p>
-NestJS offre une architecture professionnelle, modulaire et évolutive.
+  NestJS offre une architecture professionnelle, modulaire et évolutive.
 </p>
 
 <hr>
@@ -98,7 +98,7 @@ NestJS offre une architecture professionnelle, modulaire et évolutive.
 <h2>📱 Responsive Design</h2>
 
 <p>
-Le site est entièrement optimisé pour tous types d’appareils :
+  Le site est entièrement optimisé pour tous types d'appareils :
 </p>
 
 <ul>
@@ -109,8 +109,8 @@ Le site est entièrement optimisé pour tous types d’appareils :
 </ul>
 
 <p>
-Grâce à Bootstrap, aux media queries et à une grille flexible, l’interface reste fluide,
-légère et intuitive.
+  Grâce à Bootstrap, aux media queries et à une grille flexible, l'interface reste fluide,
+  légère et intuitive.
 </p>
 
 <hr>
@@ -128,7 +128,7 @@ légère et intuitive.
 </ul>
 
 <p>
-Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <strong>architecture solide</strong>.
+  Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <strong>architecture solide</strong>.
 </p>
 
 <hr>
@@ -164,7 +164,6 @@ Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <
 
 <hr>
 
-<<<<<<< HEAD
 <h2>📂 Structure du projet</h2>
 
 <pre>
@@ -198,16 +197,14 @@ Ce projet allie <strong>créativité</strong>, <strong>performance</strong> et <
 
 <hr>
 
-=======
->>>>>>> 2ec2099fe217b956f874e3bce4826b7b593640b2
 <h2>📨 Contact</h2>
 
 <p>
-👤 <strong>Développeur :</strong> Jean-Michel Conti<br>
-📧 <strong>Email :</strong> jeanmichelconti.dev@gmail.com<br>
-🔗 <strong>Portfolio :</strong> https://tonportfolio.com
+  👤 <strong>Développeur :</strong> Jean-Michel Conti<br>
+  📧 <strong>Email :</strong> jeanmichelconti.dev@gmail.com<br>
+  🔗 <strong>Portfolio :</strong> https://tonportfolio.com
 </p>
 
 <hr>
 
-<p align="center"><strong>✨ Merci d’avoir consulté ce projet ! ✨</strong></p>
+<p align="center"><strong>✨ Merci d'avoir consulté ce projet ! ✨</strong></p>
